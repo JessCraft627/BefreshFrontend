@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: ; */
+}
+
+.home-details {
+  border: 1px solid black;
+  margin-top: 25px;
+}
+.home-plan {
+  border: 1px solid black;
+    margin: 5px;
+}
+.home-top-picks {
+  border: 1px solid black;
+    margin: 5px;
+}
+.navbar{
+  border: 1px solid black;
+    margin: 5px;
+}
+.App-logo {
+  width:170px;
+  height: 170px;
+}
+
+
+.fruit {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+a:link {
+    text-decoration: none;
+}
