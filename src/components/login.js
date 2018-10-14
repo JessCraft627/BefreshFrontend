@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './navbar'
 import { Link } from 'react-router-dom';
+import raspberryclusters from '../css/assets/raspberryclusters.png';
+
 
 class Login extends React.Component {
 
@@ -47,24 +49,36 @@ componentDidMount = () => {
   render() {
     return (
       <div>
-      <Navbar />
-      <form onSubmit={this.handleSubmit}>
+        <Navbar />
+          <div className="login-div">
+            <h1 className="login-header"> Log In </h1>
+            <form className="login-form" onSubmit={this.handleSubmit}>
               <label>
-                Email:
+                <p className="login-i">Email:</p>
                 <input  name="email" type="text" value={this.state.input} onChange={this.handleInputChanges} />
               </label>
-              <label>
-                Password:
+              <label >
+                  <p className="login-i">Password:</p>
                 <input  name="password" type="text" value={this.state.input} onChange={this.handleInputChange} />
               </label>
+              <p className="login-button">
               <Link
+                  className="login-button"
                 to={{
                   pathname: "/loggedin",
                   state: { user: this.dataToDisplay() }
                 }}
-              > Login </Link>
-
-        </form>
+              > Log In </Link>
+              </p>
+            </form>
+            <p className="get-started-action">Don't have an account? <Link
+            className="get-started-cta"
+            to={{
+              pathname: "/started"
+            }}
+            > Get Started </Link></p>
+          <img src={raspberryclusters} className="login-logo" alt="logo" />
+          </div>
       </div>
     );
   }
