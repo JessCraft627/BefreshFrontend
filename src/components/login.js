@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './navbar'
-import { NavLink, Link } from 'react-router-dom';
-import LoggedIn from './loggedin'
+import { Link } from 'react-router-dom';
 
 class Login extends React.Component {
 
@@ -23,7 +22,7 @@ class Login extends React.Component {
   })
 }
 
-  filterUser = event => {
+filterUser = event => {
     return this.state.user.filter(users => users.email.toLowerCase().includes(this.state.email.toLowerCase()))}
 
 

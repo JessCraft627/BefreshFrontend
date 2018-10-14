@@ -1,16 +1,33 @@
-// import { LOGIN_USER } from './../actions'
-//
-// const initialState = null
-//
-// export default function nameReducer(state = initialState, action) {
-//   switch (action.type) {
-//     case LOGIN_USER:
-//       return action.payload
-//     default:
-//       return state
-//   }
-// }
+import {
+  FETCH_PRODUCTS_BEGIN,
+  FETCH_PRODUCTS_SUCCESS
+} from '../actions/index';
+
+const initialState = {
+  items: [],
+  loading: false,
+  error: null
+};
 
 
+export default function reducer(state = initialState, action) {
+  switch(action.type) {
+    case FETCH_PRODUCTS_BEGIN:
 
-// WILL CONTAIN MY REDUCERS THAT WILL BE COMBINED IN INDEX.JS 
+      return {
+        ...state,
+        loading: true,
+        error: null
+      };
+
+    case FETCH_PRODUCTS_SUCCESS:
+
+      return {
+        ...state,
+        loading: false,
+        items: action.payload.products
+      };
+    default:
+      return state;
+  }
+}

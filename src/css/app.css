@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* font-family: ; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .home-details {
@@ -13,10 +13,6 @@ body {
     margin: 5px;
 }
 .home-top-picks {
-  border: 1px solid black;
-    margin: 5px;
-}
-.navbar{
   border: 1px solid black;
     margin: 5px;
 }

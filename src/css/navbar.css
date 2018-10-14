@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-name {
+  flex-basis: 400px;
+}
+.App-logo {
+width: 153px;
+height: 28px;
+}
+.login {
+  border:none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #160424;
+  margin-right: 20px;
+}
+
+.started {
+  border-radius: 22.5px;
+  border: #eb7171;
+  background-color: #eb7171;
+  color:white;
+  width: 155px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.browse {
+  font-size: 16px;
+  font-weight: bold;
+  border:none;
+  color: #160424;
+  flex-basis: 500px;
+}
