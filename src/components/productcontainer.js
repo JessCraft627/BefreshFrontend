@@ -4,6 +4,7 @@ import Footer from './footer'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { fetchProducts } from "../actions/index";
+import gif from '../css/assets/giphy.gif';
 
 
 
@@ -17,7 +18,7 @@ class ProductContainer extends React.Component {
     console.log(this.props.products)
 
       if (this.props.loading) {
-        return <h1>Loading...</h1>;
+        return <img src={gif} className="smoothie-gif" alt="logo" />;
       }
 
     return (

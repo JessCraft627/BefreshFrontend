@@ -9,7 +9,7 @@ function Navbar(props) {
         className="nav-button browse"
         to="/products"> <button className="nav-button browse"> Products </button></NavLink>
       <NavLink
-          className="home-name" to="/"> <img src={logo} className="App-logo" alt="logo" /> </NavLink>
+          className="home-name" to="/"> <img src={logo} className="main-logo" alt="logo" /> </NavLink>
       <NavLink
         to="/login"> <button className="nav-button login"> Log In  </button></NavLink>
       <NavLink

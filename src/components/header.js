@@ -1,9 +1,11 @@
 
 import React, { Component } from "react";
 import Slider from "react-slick";
-import orange from '../css/assets/orange.jpeg'
-import kiwi from '../css/assets/kiwi.jpeg'
-import pink from '../css/assets/pinkfruit.jpeg'
+import orange from '../css/assets/orange.jpg';
+import watermelon from '../css/assets/watermelon.jpg';
+import raspberry from '../css/assets/raspberry.jpg';
+import pineapple from '../css/assets/pineapple.jpg';
+
 
 export default class AutoPlay extends Component {
   render() {
@@ -13,9 +15,10 @@ export default class AutoPlay extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 6000,
-      cssEase: "linear",
+      speed: 500,
+      autoplaySpeed: 4000,
+      fade: true,
+      pauseOnHover: false,
       adaptiveHeight: true
     };
     return (
@@ -25,10 +28,13 @@ export default class AutoPlay extends Component {
             <img src={orange} className="fruit" alt="logo" />
           </div>
           <div>
-              <img src={kiwi} className="fruit" alt="logo" />
+              <img src={pineapple} className="fruit" alt="logo" />
           </div>
           <div>
-              <img src={pink} className="fruit" alt="logo" />
+              <img src={raspberry} className="fruit" alt="logo" />
+          </div>
+          <div>
+              <img src={watermelon} className="fruit" alt="logo" />
           </div>
         </Slider>
       </div>

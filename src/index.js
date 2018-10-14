@@ -9,6 +9,7 @@ import './css/iproduct.css';
 import './css/navbar.css';
 import './css/login.css';
 import './css/loggedhome.css';
+import './css/footer.css';
 import './css/signup.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
