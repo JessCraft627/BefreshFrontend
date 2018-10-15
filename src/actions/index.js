@@ -2,11 +2,12 @@
 
 export function fetchProducts() {
   return dispatch => {
-    dispatch(fetchProductsBegin());
+    dispatch(fetchProductsBegin())
     return fetch('http://localhost:3000/api/v1/products')
       .then(res => res.json())
       .then(json => {
-        dispatch(fetchProductsSuccess(json));
+         setInterval(() => {
+           dispatch(fetchProductsSuccess(json))}, 2500);
         return json;
       })
   };

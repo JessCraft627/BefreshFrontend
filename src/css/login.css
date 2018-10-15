@@ -22,7 +22,7 @@ color:white;
 }
 .login-header {
   font-size: 45px;
-  margin: 0;
+  margin-bottom: 15px;
   font-weight: bold;
 }
 .login-i{
@@ -34,6 +34,7 @@ color:white;
 }
 .get-started-action {
     text-align: center;
+    padding-top: 15px;
 }
 
 .get-started-cta {

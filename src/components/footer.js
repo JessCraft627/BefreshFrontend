@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../css/assets/whitelogo.png';
-import raspberrycluster from '../css/assets/raspberrycluster.png';
+
 
 
 function Footer(props) {

@@ -8,19 +8,17 @@
   border: 1px solid black;
   margin-top: 25px;
 }
+
 .home-plan {
   border: 1px solid black;
     margin: 5px;
 }
-.home-top-picks {
-  border: 1px solid black;
-    margin: 5px;
-}
-.App-logo {
-  width:170px;
-  height: 170px;
-}
 
+.App-logo {
+  width: 330px;
+  height: 330px;
+  margin-bottom: 15px;
+}
 
 .fruit {
   margin: 0 auto;
@@ -28,7 +26,6 @@
   height: 100%;
   background-size: contain;
 }
-
 
 input:focus,
 select:focus,
@@ -39,4 +36,39 @@ button:focus {
 
 a:link {
     text-decoration: none;
+}
+
+.top-picks {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+
+.home-name {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.29;
+}
+
+.home-kind {
+  font-size: 16px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.home-products {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #eb7171;
+}
+
+.home-top-picks {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  text-align: center;
 }

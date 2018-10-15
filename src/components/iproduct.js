@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './navbar'
-import Footer from './footer'
 
 class Iproduct extends React.Component {
 
@@ -9,7 +8,7 @@ class Iproduct extends React.Component {
       <div>
         <Navbar />
         back button goes here
-    
+
       </div>
     )
   }
