@@ -44,3 +44,28 @@ height: 28px;
   color: #160424;
   flex-basis: 500px;
 }
+
+.back-button {
+  width: 14px;
+ height: 18px;
+}
+
+.white-logo {
+  width: 152px;
+  height: 28px;
+  text-align: center;
+}
+
+.count-boxes {
+  color: white;
+  font-size: 16px;
+}
+.order-navbar {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     height: 60px;
+    background-color: #eb7171;
+}

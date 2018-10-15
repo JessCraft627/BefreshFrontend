@@ -3,10 +3,11 @@
   text-align: center;
 }
 
-.smoothie-gif {
-  margin-top: 30px;
-  height: 30%;
-  width: 30%;
+.prepping-juicing-pouring {
+  font-size: 22px;
+  color: #eb7171;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .product-header {

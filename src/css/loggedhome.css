@@ -1,0 +1,53 @@
+
+.pause-plan {
+  width: 125px;
+height: 35px;
+color:white;
+font-weight: 400;
+margin-top: 30px;
+margin-bottom: 20px;
+border-color: #eb7171;
+border-radius: 22.5px;
+background-color: #eb7171;
+}
+
+.your-plan {
+  padding-left: 120px;
+  padding-bottom: 20px;
+}
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+  }
+
+  .margin-left {
+    text-align: center;
+  }
+
+  .loggedin-info {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+    padding-top: 5px;
+  }
+
+  #customer-orders th {
+    border-bottom: 1px solid black;
+     padding: 8px;
+
+     font-weight: bold;
+  }
+  #customer-orders {
+    margin: 40px auto;
+  }
+
+  #customer-orders tr:hover {
+    background-color: #eb7171;
+  }
+
+  #customer-orders td {
+    padding: 12px 100px;
+       text-align: center;
+
+  }

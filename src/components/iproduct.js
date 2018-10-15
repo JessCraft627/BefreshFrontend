@@ -7,7 +7,7 @@ class Iproduct extends React.Component {
     return (
       <div>
         <Navbar />
-        back button goes here
+      
 
       </div>
     )

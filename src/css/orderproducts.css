@@ -1,0 +1,15 @@
+.add-to-cart {
+  width: 270px;
+  height: 35px;
+  border-radius: 22.5px;
+  background-color: #eb7171;
+  color:white;
+  font-size: 16px;
+    font-weight: 100;
+  border-color: #eb7171;
+}
+
+.smoothie-details {
+  padding: 7px;
+  font-weight: 100;
+  }

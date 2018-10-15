@@ -7,7 +7,7 @@ export function fetchProducts() {
       .then(res => res.json())
       .then(json => {
          setInterval(() => {
-           dispatch(fetchProductsSuccess(json))}, 2500);
+           dispatch(fetchProductsSuccess(json))}, 500);
         return json;
       })
   };
