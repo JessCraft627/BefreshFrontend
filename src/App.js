@@ -4,6 +4,9 @@ import Navbar from './components/navbar'
 import Slider from './components/header'
 import HomePlan from './components/homeplan'
 import TopPicks from './components/toppicks'
+import step1 from './css/assets/step-1.jpg';
+import step2 from './css/assets/step-2.jpg';
+import step3 from './css/assets/step-3.jpg';
 
 
 class App extends Component {
@@ -14,9 +17,9 @@ class App extends Component {
        <Slider />
 
        <div className="home-details">
-       <div><img src={null} className="App-logo" alt="logo" /><p>Fill your box</p><p>Choose any combination of delicious superfood eats, developed by a nutritionist and made craveable by a chef.</p></div>
-       <div><img src={null} className="App-logo" alt="logo" /><p>Check your doorstep</p><p>Your pre-portioned cups will arrive ready to pop in your freezer + blend, soak or heat on your schedule</p></div>
-       <div><img src={null} className="App-logo" alt="logo" /><p>Enjoy in seconds</p><p>Simply add a liquid base to your cup and blend, soak or heat. No prep, no mess. </p></div>
+       <div><img src={step1} className="steps-logo" alt="logo" /><p className="home-box-name">Fill your box</p><p className="home-box-info">Choose any combination of delicious superfood eats, developed by a nutritionist and made craveable by a chef.</p></div>
+       <div><img src={step2} className="steps-logos" alt="logo" /><p className="home-box-name">Check your doorstep</p><p className="home-box-info">Your pre-portioned cups will arrive ready to pop in your freezer + blend, soak or heat on your schedule</p></div>
+       <div><img src={step3} className="steps-logo" alt="logo" /><p className="home-box-name">Enjoy in seconds</p><p className="home-box-info">Simply add a liquid base to your cup and blend, soak or heat. No prep, no mess. </p></div>
        </div>
 
       <HomePlan />
@@ -30,13 +33,3 @@ class App extends Component {
 }
 
 export default App;
-
-  // <img src={null} className="App-logo" alt="logo" />
-  // <a
-  //   className="App-link"
-  //   href="https://reactjs.org"
-  //   target="_blank"
-  //   rel="noopener noreferrer"
-  // >
-  //   Learn React
-  // </a>

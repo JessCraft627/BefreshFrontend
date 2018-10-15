@@ -1,12 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import smoothie from '../css/assets/smoothie.png';
 
 function HomePlan(props) {
   return (
-    <div className="home-plan"><p>Pick a plan</p><span> Healthy just got easy! No commitment. Flexible frequency. Skip or cancel anytime.
-      Choose between 6 or 9 cups a week. </span><div><p>6 weekly</p><p> $7.75 per cup</p></div><div><p>9 weekly</p><p> $6.75 per cup</p></div><NavLink
-      to="/products"> <button className="nav-button home-product"> View all products </button></NavLink>
-   </div>
+    <div className="home-plan">
+      <img src={smoothie} className="smoothie-logo" alt="logo" />
+      <div>
+        <p className="the-plans">The Plans</p><p className="no-commit">Healthy just got easy! No commitment. </p>
+            <p className="no-commit">Flexible frequency. Skip or cancel anytime.</p>
+            <p className="weekly-options">Two weekly plan options</p>
+            <div className="weekly-offer"><p className="numbered">6</p><p className="numbered-week">per week</p><p className="numbered-cost"> $7.75 per cup</p></div>
+            <div className="weekly-offer"><p className="numbered">9</p><p className="numbered-week">per week</p><p className="numbered-cost"> $6.75 per cup</p></div>
+            <NavLink
+              to="/products"> <button className="view-products"> View all products </button></NavLink>
+      </div>
+    </div>
   );
 }
 
