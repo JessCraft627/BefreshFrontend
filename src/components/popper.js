@@ -32,7 +32,7 @@ function RenderPropsPopover(props) {
                 updateAnchorEl(event.currentTarget);
               }}
             >
-              Open Popover
+              jsdjdsj
             </Button>
             <Popover
               id="render-props-popover"

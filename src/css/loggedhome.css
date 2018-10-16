@@ -49,5 +49,8 @@ background-color: #eb7171;
   #customer-orders td {
     padding: 12px 100px;
        text-align: center;
+  }
 
+  .order-history-login{
+    margin-top: 30px;
   }

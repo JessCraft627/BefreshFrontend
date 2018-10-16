@@ -13,7 +13,7 @@ class OrderProducts extends Component {
 
   handleOrderChanges = event => {
     this.setState({
-      numordered:   this.state.numordered < 9 ? this.state.numordered + 1 : this.state.numordered 
+      numordered:   this.state.numordered < this.props.location.state.numpicked ? this.state.numordered + 1 : this.state.numordered 
     })
 }
 

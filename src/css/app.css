@@ -73,15 +73,11 @@ a:link {
   padding-right: 15px;
 }
 .steps-logo {
- width: 200px;
- height: 280px;
+  width: 372px;
+  height: 373px;
+  object-fit: contain;
+}
 
-}
-.steps-logos {
-  width: 250px;
- height: 280px;
- padding-right: 50px;
-}
 
 .home-box-name {
 font-size: 21px;

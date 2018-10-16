@@ -1,0 +1,51 @@
+.headers {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 80px;
+  background-color: #eb7171;
+}
+
+.checkout-page {
+  color:black;
+  font-weight: 200;
+}
+
+
+.checkout-headers {
+  font-size: 42px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.be-fresh-logo {
+  width: 152px;
+  height: 28px;
+  margin-top: 25px;
+}
+.be-smoothie-logo {
+  width: 473px;
+  height: 368px;
+  object-fit: contain;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.boxed-info {
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.complete-order {
+font-size: 16px;
+border-radius: 22.5px;
+color:white;
+width: 473px;
+  height: 45px;
+font-weight: 200;
+margin-top: 50px;
+border-color: #eb7171;
+background-color: #eb7171;
+}

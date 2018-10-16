@@ -24,7 +24,7 @@ class ProductContainer extends React.Component {
           <div className="product-div" key={product.id}>
            <img src={product.image_url} className="product-images" alt="logo" />
            <p className="home-name">{product.name}</p>
-           <p className="smoothie-details"> Smoothie Details</p>
+           <p className="smoothie-details"> {product.kind} Details</p>
            <button className="add-to-cart" onClick={this.props.handleChange}> Add to cart </button>
           </div>
 

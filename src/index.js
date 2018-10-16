@@ -9,6 +9,7 @@ import './css/iproduct.css';
 import './css/navbar.css';
 import './css/login.css';
 import './css/loggedhome.css';
+import './css/checkout.css';
 import './css/orderproducts.css';
 import './css/footer.css';
 import './css/signup.css';
