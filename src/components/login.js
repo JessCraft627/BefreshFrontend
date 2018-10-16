@@ -24,10 +24,6 @@ class Login extends React.Component {
   })
 }
 
-filterUser = event => {
-    return this.state.user.filter(users => users.email.toLowerCase().includes(this.state.email.toLowerCase()))}
-
-
 
 dataToDisplay = () => {
       return this.state.user ? this.filterResults() : null
@@ -56,7 +52,7 @@ componentDidMount = () => {
             <form className="login-form" onSubmit={this.handleSubmit}>
               <label>
                 <p className="login-i">Email:</p>
-                <input  name="email" type="text" value={this.state.input} onChange={this.handleInputChanges} />
+                <input name="email" type="text" value={this.state.input} onChange={this.handleInputChanges} />
               </label>
               <label >
                   <p className="login-i">Password:</p>

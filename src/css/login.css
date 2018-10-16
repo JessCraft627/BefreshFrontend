@@ -8,6 +8,7 @@
    position: relative;
   font-family: 'Montserrat', sans-serif;
 }
+
 .login-button {
 padding: 10px 20px;
 margin: 0 auto;
@@ -53,7 +54,18 @@ color:white;
     margin: 0 auto;
 }
 
-input[type=text] {
+input[name=email] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 0px auto 30px;
+    display: block;
+    background-color: #dfd6f1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #eb7171;
+}
+input[name=password] {
     width: 25%;
     padding: 12px 20px;
     margin: 0px auto 30px;

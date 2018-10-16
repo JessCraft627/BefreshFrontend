@@ -11,6 +11,10 @@ class ProductContainer extends React.Component {
     this.props.dispatch(fetchProducts())
   }
 
+  state = {
+    selectedProduct: []
+  }
+
   render () {
 
 
@@ -29,10 +33,13 @@ class ProductContainer extends React.Component {
            <p className="home-name">{product.name}</p>
             <p className="home-kind"> {product.kind}</p>
             <Link
+              data-user={product.id}
               className="home-products"
               to={{
                 pathname: "/product",
+                state: { selectedProduct: product.id }
               }}
+
             > Details </Link>
           </div>
 

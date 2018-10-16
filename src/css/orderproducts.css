@@ -5,11 +5,59 @@
   background-color: #eb7171;
   color:white;
   font-size: 16px;
-    font-weight: 100;
+  font-weight: 100;
   border-color: #eb7171;
 }
 
 .smoothie-details {
   padding: 7px;
   font-weight: 100;
-  }
+}
+
+.boxes-logo {
+  width: 48px;
+  height: 38px;
+  object-fit: contain;
+  margin-bottom: -7px;
+}
+
+.popper-container {
+
+  width: 309px;
+ height: 500px;
+}
+
+.popover-details {
+  padding: 20px 5px 400px 20px;
+}
+
+.get-checkout {
+  padding: 10px 100px;
+  border-radius: 22.5px;
+  background-color: #eb7171;
+  color:white;
+  margin-left: 30px;
+  width:350px;
+}
+
+.modal-container {
+  width: 75%;
+  margin: 0 auto;
+  height:100%;
+  opacity: 1;
+}
+.modal-containers {
+  background-color: lightgrey;
+  width: 35%;
+  padding: 40px;
+  color:black;
+  margin: 150px auto;
+  opacity: 1;
+}
+
+
+
+.individual-p-infos {
+    border: 2px solid black;
+    padding: 25px;
+}

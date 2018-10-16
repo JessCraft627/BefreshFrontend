@@ -24,7 +24,7 @@ import ProductContainer from './components/productcontainer'
 import Checkout from './components/checkout'
 import Iproduct from './components/iproduct'
 import Confirmation from './components/confirmation'
-import OrderProducts from './components/orderproducts'
+import OrderProductContainer from './components/orderproductcontainer'
 import Started from './components/started'
 import App from './App';
 import reducer from './reducers/name.js'
@@ -45,7 +45,7 @@ ReactDOM.render((
         <Route path="/product" component={Iproduct} />
         <Route path="/checkout" component={Checkout} />
         <Route path="/started" component={Started} />
-        <Route path="/order" component={OrderProducts} />
+        <Route path="/order" component={OrderProductContainer} />
         <Route path="/confirm" component={Confirmation} />
       </React.Fragment>
     </Router>

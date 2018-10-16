@@ -1,22 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import Popover from '@material-ui/core/Popover';
 import toRenderProps from 'recompose/toRenderProps';
 import withState from 'recompose/withState';
+import { Link } from 'react-router-dom';
+import box from '../css/assets/box.png';
 
-const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null));
+const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null, 'numordered'));
 
-const styles = theme => ({
-  typography: {
-    margin: theme.spacing.unit * 2,
-  },
-});
+
 
 function RenderPropsPopover(props) {
-  const { classes } = props;
+    console.log(props)
+
 
   return (
     <WithState>
@@ -24,16 +20,16 @@ function RenderPropsPopover(props) {
         const open = Boolean(anchorEl);
         return (
           <React.Fragment>
-            <Button
+             <img src={box}
+               alt= "boxes"
+              className="boxes-logo"
               aria-owns={open ? 'render-props-popover' : null}
               aria-haspopup="true"
               variant="contained"
               onClick={event => {
                 updateAnchorEl(event.currentTarget);
               }}
-            >
-              jsdjdsj
-            </Button>
+            />
             <Popover
               id="render-props-popover"
               open={open}
@@ -50,7 +46,15 @@ function RenderPropsPopover(props) {
                 horizontal: 'center',
               }}
             >
-              <Typography className={classes.typography}>The content of the Popover.</Typography>
+              <div className="popper-container">
+                <p className="popover-details">  image pic image name - quantity + </p>
+                  <Link
+                  className="get-checkout"
+                  to={{
+                    pathname: "/checkout"
+                  }}
+                  > Next </Link>
+              </div>
             </Popover>
           </React.Fragment>
         );
@@ -63,4 +67,4 @@ RenderPropsPopover.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(RenderPropsPopover);
+export default RenderPropsPopover;

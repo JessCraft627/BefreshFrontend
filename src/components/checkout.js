@@ -13,8 +13,52 @@ function Confirmation(props) {
           <h1 className="checkout-headers"> Checkout </h1>
           <div className="card-container">
             <main className="card-info">
-              <p> Credit Card</p>
-              <p> Shipping Address</p>
+              <p className="checkout-names"> Credit Card</p>
+                <form >
+                  <label className="checkout-header">
+                    Name on card:
+                    <input name="payment-info" type="text" value={null}  />
+                  </label>
+                  <label className="checkout-header">
+                    Card Number:
+                    <input  name="payment-info" type="text" value={null}  />
+                  </label>
+                  <label className="checkout-header">
+                    Expiration:
+                    <input  name="payment-info" type="text" value={null}  />
+                  </label>
+                  <label className="checkout-header">
+                    Expiration:
+                    <input name="payment-info" type="text" value={null}  />
+                  </label>
+                  <p className="checkout-names">Shipping Address</p>
+                    <label className="checkout-header">
+                      Address:
+                      <input  name="payment-info" type="text" value={null}  />
+                    </label>
+                    <label className="checkout-header">
+                      City:
+                      <input name="payment-info" type="text" value={null}  />
+                    </label>
+                    <label className="checkout-header">
+                      State:
+                      <input name="payment-info" type="text" value={null}  />
+                    </label>
+                    <label className="checkout-header">
+                      Zip:
+                      <input  name="payment-info" type="text" value={null}  />
+                    </label>
+                    <p className="checkout-names">Account</p>
+                      <label className="checkout-header">
+                        Email:
+                        <input  name="payment-info" type="text" value={null}  />
+                      </label>
+                      <label className="checkout-header">
+                        Password:
+                        <input  name="payment-info" type="text" value={null}  />
+                      </label>
+
+                </form>
             </main>
             <main className="arrival-container">
                 <img src={smoothielogo} className="be-smoothie-logo" alt="logo" />
