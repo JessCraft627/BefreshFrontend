@@ -47,13 +47,18 @@ function RenderPropsPopover(props) {
               }}
             >
               <div className="popper-container">
-                <p className="popover-details">  image pic image name - quantity + </p>
-                  <Link
-                  className="get-checkout"
-                  to={{
-                    pathname: "/checkout"
-                  }}
-                  > Next </Link>
+                <div className="popover-details">
+                    {props.cart.map((name, index) =>  {return <div key={index}><span className="popper-item">{name}</span>
+                       <span data-name={name} className="the-x" onClick={props.handleCountDown}> X </span> </div>})}
+                </div>
+                { props.ordered === props.picked ?     <Link
+                    className="get-checkout"
+                    to={{
+                      pathname: "/checkout",
+                      state: { picked: props.picked }
+                    }}
+                    > Next </Link> : null}
+
               </div>
             </Popover>
           </React.Fragment>

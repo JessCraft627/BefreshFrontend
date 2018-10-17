@@ -23,12 +23,12 @@
 
 .popper-container {
 
-  width: 309px;
+  width: 330px;
  height: 500px;
 }
 
 .popover-details {
-  padding: 20px 5px 400px 20px;
+  padding: 20px 5px 300px 20px;
 }
 
 .get-checkout {
@@ -47,7 +47,7 @@
   opacity: 1;
 }
 .modal-containers {
-  background-color: lightgrey;
+  background-color: white;
   width: 35%;
   padding: 40px;
   color:black;
@@ -55,9 +55,20 @@
   opacity: 1;
 }
 
-
+.the-x {
+  padding-left:70px;
+  font-size: 16px;
+  color: #eb7171;
+}
 
 .individual-p-infos {
     border: 2px solid black;
     padding: 25px;
+}
+
+.popper-item {
+font-size: 16px;
+font-weight: bold;
+padding-right: 10px;
+line-height: 1.5;
 }
