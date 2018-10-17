@@ -35,11 +35,12 @@ class ProductContainer extends React.Component {
   }
 
       handleCountDown = event => {
-      let name = event.target.dataset.name
-      console.log(name)
+      let id = event.target.dataset.id
+      let cart = [...this.state.cart]
+      cart.splice(id, 1)
       this.setState({
         numordered:   this.state.numordered > 0 ? this.state.numordered - 1 : this.state.numordered,
-          cart: this.state.cart.filter(product => product !== name)
+          cart:  cart
       }, () =>  console.log(this.state))
   }
 
