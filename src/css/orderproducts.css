@@ -22,13 +22,14 @@
 }
 
 .popper-container {
-
-  width: 330px;
- height: 500px;
+  width: 360px;
+  height: 500px;
+  margin: 10px;
+  border: 1px solid #eb7171;
 }
 
 .popover-details {
-  padding: 20px 5px 300px 20px;
+  padding: 30px 5px 100px 30px;
 }
 
 .get-checkout {
@@ -36,8 +37,12 @@
   border-radius: 22.5px;
   background-color: #eb7171;
   color:white;
-  margin-left: 30px;
+  margin-left: 55px;
   width:350px;
+}
+.get-checkout:hover {
+  background-color: #d35252;
+
 }
 
 .modal-container {
@@ -57,8 +62,12 @@
 
 .the-x {
   padding-left:10px;
-  font-size: 16px;
+  font-size: 20px;
   color: #eb7171;
+}
+.the-x:hover {
+  color:white;
+  background-color: #eb7171;
 }
 
 .individual-p-infos {
@@ -67,8 +76,9 @@
 }
 
 .popper-item {
-font-size: 16px;
-font-weight: bold;
+font-size: 18px;
+font-weight: 400;
 padding-right: 10px;
-line-height: 1.5;
+margin-bottom: 10px;
+line-height: 2;
 }

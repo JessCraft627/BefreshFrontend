@@ -5,7 +5,6 @@ import toRenderProps from 'recompose/toRenderProps';
 import withState from 'recompose/withState';
 import { Link } from 'react-router-dom';
 import box from '../css/assets/box.png';
-const uuidv4 = require('uuid/v4');
 
 const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null, 'numordered'));
 
@@ -49,8 +48,8 @@ function RenderPropsPopover(props) {
             >
               <div className="popper-container">
                 <div className="popover-details">
-                    {props.cart.map((name, index) =>  {return <div key={index}><span className="popper-item">{name}</span>
-                       <span data-id={index} className="the-x" onClick={props.handleCountDown}> X </span> </div>})}
+                    {props.cart.map((name, index) =>  {return <div key={index}>   <span data-id={index} className="the-x" onClick={props.handleCountDown}> X </span><span className="popper-item">{name}</span>
+                     </div>})}
                 </div>
                 { props.ordered === props.picked ?     <Link
                     className="get-checkout"
