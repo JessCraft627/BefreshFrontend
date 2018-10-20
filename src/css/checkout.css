@@ -54,8 +54,12 @@ input[name=payment-info] {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #eb7171;
+    border-bottom: 2px solid lightgrey;
 }
+
+input[name=payment-info]:focus {
+  border-bottom: 2px solid #eb7171;
+ }
 
 .checkout-names {
   font-size: 24px;
@@ -78,6 +82,10 @@ margin-top: 50px;
 border-color: #eb7171;
 background-color: #eb7171;
 }
+.complete-order:hover {
+  border-color: #d35252;
+  background-color: #d35252;
+}
 
 .arrival-container {
   text-align: center;
@@ -85,5 +93,4 @@ background-color: #eb7171;
 
 .error {
   text-align: center;
-
 }

@@ -1,3 +1,76 @@
 h4 {
   padding-top: 20px;
 }
+
+
+.the-plans {
+  font-size: 35px;
+font-weight: bold;
+padding-top: 90px;
+padding-bottom: 15px;
+}
+
+.no-commit {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.weekly-options {
+  font-size: 16px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.weekly-offer {
+  border-radius: 10px;
+  border: solid 4px #272f30;
+  width: 162px;
+ height: 162px;
+ display: inline-block;
+ margin-right: 30px;
+}
+
+.weekly-offer:hover {
+  background-color:  #eb7171;
+  cursor: pointer;
+  color:white;
+  border-color: #eb7171;
+}
+
+.numbered {
+  height: 55px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-top: 30px;
+}
+
+.numbered-week {
+  height: 19px;
+ font-size: 16px;
+ font-weight: 500;
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+
+.numbered-cost {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.view-products {
+  width: 289px;
+height: 65px;
+border-radius: 32.5px;
+background-color: #eb7171;
+color:white;
+font-size: 21px;
+font-weight: 400;
+margin: 40px auto;
+border-color: #eb7171;
+display: block;
+}
+ .view-products:hover {
+   background-color: #d35252;
+ }

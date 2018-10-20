@@ -13,12 +13,19 @@
   padding: 7px;
   font-weight: 100;
 }
+.smoothie-details:hover {
+  color:black;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+}
 
 .boxes-logo {
   width: 48px;
   height: 38px;
   object-fit: contain;
-  margin-bottom: -7px;
+  margin-bottom: -10px;
+  padding-left: 10px;
 }
 
 .popper-container {
@@ -40,9 +47,9 @@
   margin-left: 55px;
   width:350px;
 }
+
 .get-checkout:hover {
   background-color: #d35252;
-
 }
 
 .modal-container {

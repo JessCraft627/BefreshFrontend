@@ -28,50 +28,22 @@ a:link {
     text-decoration: none;
 }
 
+.modal-container-two {
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  height: 100px;
+
+}
+
 .top-picks {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  padding: 55px 0px;
+  padding: 85px 0px;
 }
 
-.home-name {
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 1.29;
-}
 
-.home-kind {
-  font-size: 16px;
-  line-height: 1.5;
-  font-size: 16px;
-  font-weight: 100;
-}
-
-.home-products {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.5;
-  text-align: center;
-  color: #eb7171;
-}
-
-.home-top-picks {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.home-details {
-  display: flex;
-  margin-top: 90px;
-  margin-bottom: 140px;
-  justify-content: space-around;
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .steps-logo {
   width: 372px;
   height: 373px;
@@ -91,6 +63,8 @@ padding-bottom: 10px;
   font-size: 16px;
   font-weight: 100;
   line-height: 1.5;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .home-plan {
@@ -106,68 +80,4 @@ padding-bottom: 10px;
   width: 536px;
   height: 603.3px;
   object-fit: contain;
-}
-
-.view-products {
-  width: 289px;
-height: 65px;
-border-radius: 32.5px;
-background-color: #eb7171;
-color:white;
-font-size: 21px;
-  font-weight: 500;
-  line-height: 1.52;
-margin: 40px auto;
-letter-spacing: normal;
-border-color: #eb7171;
-display: block;
-}
-
-.the-plans {
-  font-size: 35px;
-font-weight: bold;
-padding-top: 90px;
-padding-bottom: 15px;
-}
-
-.no-commit {
-  font-size: 16px;
-  font-weight: 200;
-}
-
-.weekly-options {
-  font-size: 16px;
-  padding-top: 40px;
-  padding-bottom: 15px;
-  font-weight: 500;
-}
-
-.weekly-offer {
-  border-radius: 10px;
-  border: solid 4px #272f30;
-  width: 162px;
- height: 162px;
- display: inline-block;
- margin-right: 30px;
-}
-
-.numbered {
-  height: 55px;
-  font-size: 46px;
-  font-weight: bold;
-  line-height: 1.2;
-  padding-top: 30px;
-}
-
-.numbered-week {
-  height: 19px;
- font-size: 16px;
- font-weight: 500;
- padding-top: 5px;
- padding-bottom: 5px;
-}
-
-.numbered-cost {
-  font-size: 16px;
-  font-weight: 200;
 }

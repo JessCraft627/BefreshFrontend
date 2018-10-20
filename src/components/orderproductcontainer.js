@@ -26,12 +26,10 @@ class ProductContainer extends React.Component {
 
     handleOrderChanges = event => {
       let product = event.target.dataset.product
-
-      console.log(product)
       this.setState({
         numordered: this.state.numordered < this.props.location.state.numpicked ? this.state.numordered + 1 : this.state.numordered,
         cart: this.state.numordered === this.props.location.state.numpicked ? [...this.state.cart] : [...this.state.cart, product]
-      }, () => console.log(this.state))
+      })
   }
 
       handleCountDown = event => {
@@ -41,7 +39,7 @@ class ProductContainer extends React.Component {
       this.setState({
         numordered:   this.state.numordered > 0 ? this.state.numordered - 1 : this.state.numordered,
           cart:  cart
-      }, () =>  console.log(this.state))
+      })
   }
 
 
@@ -86,7 +84,7 @@ class ProductContainer extends React.Component {
           </div>
        )}
        {this.state.open ?         <Modal
-                className="modal-container"
+               className="modal-container"
                open={this.state.open}
                onClose={this.handleClose}
              >

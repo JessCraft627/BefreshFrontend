@@ -62,6 +62,7 @@ input[name=email] {
     background-color: #dfd6f1;
     border-top: none;
     border-left: none;
+    font-size: 18px;
     border-right: none;
     border-bottom: 2px solid #eb7171;
 }
@@ -72,6 +73,7 @@ input[name=password] {
     display: block;
     background-color: #dfd6f1;
     border-top: none;
+    font-size: 20px;
     border-left: none;
     border-right: none;
     border-bottom: 2px solid #eb7171;

@@ -10,12 +10,6 @@ function Footer(props) {
           <img src={logo} className="footer-logo" alt="logo" />
         </div>
       </footer>
-
-
-
-
-
-
   );
 }
 

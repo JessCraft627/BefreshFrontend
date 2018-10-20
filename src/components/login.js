@@ -38,7 +38,7 @@ componentDidMount = () => {
   .then(r=>r.json())
   .then(json => this.setState({
     user: json
-  }, () => console.log(this.state.user)))
+  }))
 }
 
 
@@ -56,7 +56,7 @@ componentDidMount = () => {
               </label>
               <label >
                   <p className="login-i">Password:</p>
-                <input  name="password" type="text" value={this.state.input} onChange={this.handleInputChange} />
+                <input  name="password" type="password" value={this.state.input} onChange={this.handleInputChange} />
               </label>
               <p className="login-button">
                 {

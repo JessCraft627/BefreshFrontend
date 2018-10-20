@@ -1,28 +1,35 @@
-.navbar {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.home-name {
-  flex-basis: 400px;
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px 10px 80px;
 }
+
 .main-logo {
 width: 153px;
 height: 28px;
+margin-left: 40px;
 }
+
 .login {
   border:none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #160424;
-  margin-right: 20px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.login:hover {
+  background-color: #eb7171;
+  width:100px;
+  color: white;
+  font-weight: 200;
 }
 
 .started {
@@ -38,12 +45,19 @@ height: 28px;
 }
 
 .browse {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   border:none;
+    padding: 5px;
   color: #160424;
-  flex-basis: 500px;
 }
+.browse:hover {
+  background-color: #eb7171;
+  width:100px;
+  color: white;
+  font-weight: 200;
+}
+
 
 .back-button {
   width: 14px;
@@ -54,6 +68,7 @@ height: 28px;
   width: 152px;
   height: 28px;
   text-align: center;
+  padding-left: 50px;
 }
 
 .count-boxes {
@@ -66,6 +81,6 @@ height: 28px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-     height: 60px;
+    height: 60px;
     background-color: #eb7171;
 }

@@ -151,9 +151,9 @@ render () {
             <main className="arrival-container">
                 <img src={smoothielogo} className="be-smoothie-logo" alt="logo" />
                 <p className="boxed-info"> Your box will arrive on November 1st</p>
-                <p className="boxed-info"> {this.props.location.state.picked} cups weekly - {this.props.location.state.picked === 6 ? "$69" : "$79.95"}</p>
+                <p className="boxed-info"> {this.props.location.state.picked} cups weekly - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>
                 <p className="boxed-info"> Shipping - Free</p>
-                <p className="boxed-info"> Total - $69.95</p>
+                <p className="boxed-info"> Total - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>
                 <NavLink
                     onClick={this.handleProfileCreation}
                     to={this.state.name !== " " ? "/confirm" : "/checkout"}> <button className="complete-order"> Complete Order </button> </NavLink>

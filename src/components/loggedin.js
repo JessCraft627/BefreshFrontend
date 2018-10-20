@@ -1,11 +1,22 @@
 import React from 'react'
 import logo from '../css/assets/logo@3x.png';
 import { NavLink } from 'react-router-dom';
+import Modal from '@material-ui/core/Modal';
 
 class LoggedIn extends React.Component {
   state = {
-    clicked: true
+    clicked: true,
+    open: false,
   }
+
+
+  handleOpen = () => {
+   this.setState({ open: true, clicked: !this.state.clicked });
+ };
+
+ handleClose = () => {
+   this.setState({ open: false });
+ };
 
   handleInputChange = event => {
   this.setState({
@@ -24,15 +35,29 @@ class LoggedIn extends React.Component {
         <h2 className="your-plan">Your plan</h2>
           <div className="confirmation">
             <h2> {this.props.location.state.user[0].subscription} Weekly</h2>
-            <p>Your plan is {
-               this.state.clicked? 'Active' : 'Paused'
-            }  </p>
-          <button className="pause-plan" onClick= {() => this.setState({clicked: !this.state.clicked})}>
-            {
-               this.state.clicked? 'Pause Plan' : 'Activate Plan'
+
+          <button className="pause-plan" onClick={this.handleOpen}>  {  this.state.clicked ?  'Pause your plan' : 'Activate Plan'}   </button>
+            {this.state.open ?
+                 <Modal
+                      className="modal-container-two"
+                      disableAutoFocus={true}
+                     open={this.state.open}
+                     onClose={this.handleClose}
+                   >
+                   <div className="modal-containers">
+                     <p>Your plan is now {
+                        this.state.clicked? 'active': 'paused'
+                     }  </p>
+                   </div>
+         </Modal>  : null
             }
-            </button>
+
+
           </div>
+
+
+
+
 
         <div className= "margin-left">
         <h3 className="order-history-login"> Order History </h3>
