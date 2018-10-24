@@ -72,15 +72,15 @@ input[name=payment-info]:focus {
 }
 
 .complete-order {
-font-size: 16px;
-border-radius: 22.5px;
-color:white;
-width: 473px;
+  font-size: 16px;
+  border-radius: 22.5px;
+  color:white;
+  width: 473px;
   height: 45px;
-font-weight: 200;
-margin-top: 50px;
-border-color: #eb7171;
-background-color: #eb7171;
+  font-weight: 200;
+  margin-top: 50px;
+  border-color: #eb7171;
+  background-color: #eb7171;
 }
 .complete-order:hover {
   border-color: #d35252;

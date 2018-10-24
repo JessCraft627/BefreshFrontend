@@ -7,7 +7,6 @@ import logo from '../css/assets/whitelogo.png';
 import back from '../css/assets/icon-left@3x.png';
 import Popper from './popper.js'
 
-
 class ProductContainer extends React.Component {
 
       state = {
@@ -41,8 +40,6 @@ class ProductContainer extends React.Component {
           cart:  cart
       })
   }
-
-
 
     handleClose = () => {
       this.setState({ open: false, selectedProducts: [] });

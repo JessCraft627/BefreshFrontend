@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { fetchProducts } from "../actions/index";
 
-
 class ProductContainer extends React.Component {
 
   componentDidMount() {
@@ -16,8 +15,6 @@ class ProductContainer extends React.Component {
   }
 
   render () {
-
-
       if (this.props.loading) {
         return <div className="prepping-juicing-pouring"> Prepping... Juicing... Pouring...</div>;
       }

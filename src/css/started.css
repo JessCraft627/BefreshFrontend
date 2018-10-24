@@ -5,9 +5,9 @@ h4 {
 
 .the-plans {
   font-size: 35px;
-font-weight: bold;
-padding-top: 90px;
-padding-bottom: 15px;
+  font-weight: bold;
+  padding-top: 90px;
+  padding-bottom: 15px;
 }
 
 .no-commit {
@@ -23,12 +23,12 @@ padding-bottom: 15px;
 }
 
 .weekly-offer {
-  border-radius: 10px;
-  border: solid 4px #272f30;
-  width: 162px;
- height: 162px;
- display: inline-block;
- margin-right: 30px;
+   border-radius: 10px;
+   border: solid 4px #272f30;
+   width: 162px;
+   height: 162px;
+   display: inline-block;
+   margin-right: 30px;
 }
 
 .weekly-offer:hover {
@@ -48,10 +48,10 @@ padding-bottom: 15px;
 
 .numbered-week {
   height: 19px;
- font-size: 16px;
- font-weight: 500;
- padding-top: 5px;
- padding-bottom: 5px;
+   font-size: 16px;
+   font-weight: 500;
+   padding-top: 5px;
+   padding-bottom: 5px;
 }
 
 .numbered-cost {
@@ -61,15 +61,15 @@ padding-bottom: 15px;
 
 .view-products {
   width: 289px;
-height: 65px;
-border-radius: 32.5px;
-background-color: #eb7171;
-color:white;
-font-size: 21px;
-font-weight: 400;
-margin: 40px auto;
-border-color: #eb7171;
-display: block;
+  height: 65px;
+  border-radius: 32.5px;
+  background-color: #eb7171;
+  color:white;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 40px auto;
+  border-color: #eb7171;
+  display: block;
 }
  .view-products:hover {
    background-color: #d35252;

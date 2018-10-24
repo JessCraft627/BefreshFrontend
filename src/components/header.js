@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import Slider from "react-slick";
 import orange from '../css/assets/orange.jpg';

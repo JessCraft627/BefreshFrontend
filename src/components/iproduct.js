@@ -3,11 +3,6 @@ import Navbar from './navbar'
 import { connect } from 'react-redux'
 
 class Iproduct extends React.Component {
-
-
-
-
-
   render () {
     return (
       <div>

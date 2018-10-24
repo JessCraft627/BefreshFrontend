@@ -78,14 +78,14 @@
 }
 
 .individual-p-infos {
-    border: 2px solid black;
-    padding: 25px;
+  border: 2px solid black;
+  padding: 25px;
 }
 
 .popper-item {
-font-size: 18px;
-font-weight: 400;
-padding-right: 10px;
-margin-bottom: 10px;
-line-height: 2;
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  line-height: 2;
 }

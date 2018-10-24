@@ -25,7 +25,7 @@ button:focus {
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .modal-container-two {
@@ -52,11 +52,11 @@ a:link {
 
 
 .home-box-name {
-font-size: 21px;
-font-weight: bold;
-line-height: 1.29;
-padding-top: 40px;
-padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.29;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .home-box-info {

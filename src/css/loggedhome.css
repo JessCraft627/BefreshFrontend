@@ -1,14 +1,14 @@
 
 .pause-plan {
   width: 125px;
-height: 35px;
-color:white;
-font-weight: 400;
-margin-top: 30px;
-margin-bottom: 20px;
-border-color: #eb7171;
-border-radius: 22.5px;
-background-color: #eb7171;
+  height: 35px;
+  color:white;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-color: #eb7171;
+  border-radius: 22.5px;
+  background-color: #eb7171;
 }
 
 .your-plan {
@@ -33,17 +33,13 @@ background-color: #eb7171;
   }
 
   #customer-orders th {
-    border-bottom: 1px solid black;
+     border-bottom: 1px solid black;
      padding: 8px;
-
      font-weight: bold;
   }
+
   #customer-orders {
     margin: 40px auto;
-  }
-
-  #customer-orders tr:hover {
-    background-color: #eb7171;
   }
 
   #customer-orders td {

@@ -72,7 +72,7 @@ componentDidMount = () => {
                 > Log In </Link>
               :     <Link
                       className="login-button"
-                    to={{
+                      to={{
                       pathname: "/loggedin",
                       state: { user: this.dataToDisplay() }
                     }}

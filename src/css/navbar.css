@@ -8,12 +8,13 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 10px 0px 10px 80px;
+
 }
 
 .main-logo {
-width: 153px;
-height: 28px;
-margin-left: 40px;
+  width: 153px;
+  height: 28px;
+  margin-left: 40px;
 }
 
 .login {
@@ -27,7 +28,7 @@ margin-left: 40px;
 
 .login:hover {
   background-color: #eb7171;
-  width:100px;
+
   color: white;
   font-weight: 200;
 }
@@ -40,7 +41,8 @@ margin-left: 40px;
   width: 150px;
   height: 45px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: .8px;
   line-height: 1.5;
 }
 
@@ -48,12 +50,13 @@ margin-left: 40px;
   font-size: 18px;
   font-weight: bold;
   border:none;
-    padding: 5px;
+    padding: 10px;
   color: #160424;
 }
+
 .browse:hover {
   background-color: #eb7171;
-  width:100px;
+
   color: white;
   font-weight: 200;
 }

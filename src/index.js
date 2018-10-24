@@ -12,7 +12,6 @@ import './css/loggedhome.css';
 import './css/checkout.css';
 import './css/orderproducts.css';
 import './css/footer.css';
-import './css/signup.css';
 import './css/started.css';
 import './css/confirmation.css';
 import "slick-carousel/slick/slick.css";

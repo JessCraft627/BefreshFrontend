@@ -9,13 +9,13 @@ class Confirmation extends React.Component {
     name: " ",
     email: " ",
     password: " ",
-    subscription: parseInt(9),
+    subscription: this.props.location.state.picked,
     address: " ",
     city: " ",
     state: " ",
     zip: "",
     card_number: "",
-    orders: [],
+    orders: this.props.location.state.cart,
     displayError: false
   };
 
@@ -60,6 +60,16 @@ class Confirmation extends React.Component {
     card_number: parseInt(event.target.value)
   })
 }
+  handleInputChangeTen = event => {
+  this.setState({
+    subscription: this.props.location.state.picked
+  })
+}
+  handleInputChangeEleven = event => {
+  this.setState({
+    orders: this.props.location.state.cart
+  }, () => console.log(this.state))
+}
 
 
   handleProfileCreation = event => {
@@ -72,16 +82,35 @@ class Confirmation extends React.Component {
       method: 'POST',
       body: JSON.stringify({
         name: this.state.name,
-          email: this.state.email,
+        email: this.state.email,
         password: this.state.password,
         subscription: this.state.subscription,
         address: this.state.address,
         city: this.state.city,
         state: this.state.state,
         zip: this.state.zip,
-        card_number: this.state.card_number
+        card_number: this.state.card_number,
       })
-    })
+    }).then( res => res.json()).then( res => fetch("http://localhost:3000/api/v1/orders", {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: 'POST',
+        body: JSON.stringify({
+          user_id: res.id,
+          total: 34
+        })
+      })).then( res => res.json()).then( res => fetch(`http://localhost:3000/api/v1/orders/${res.id}`, {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          method: 'PATCH',
+          body: JSON.stringify({
+            products: {name: this.state.orders}
+          })
+        }))
     this.setState({ displayError: false })
   } else {
     this.setState({ displayError: true })
@@ -90,6 +119,7 @@ class Confirmation extends React.Component {
 
 render () {
   console.log(this.props)
+  console.log(this.state)
   return (
      <React.Fragment>
         <div className="checkout-page">
@@ -151,6 +181,7 @@ render () {
             <main className="arrival-container">
                 <img src={smoothielogo} className="be-smoothie-logo" alt="logo" />
                 <p className="boxed-info"> Your box will arrive on November 1st</p>
+                <div className="boxed-info"> Box Contents: {this.props.location.state.cart.map((cart, index) => <p>{index + 1}: {cart}</p>)} </div>
                 <p className="boxed-info"> {this.props.location.state.picked} cups weekly - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>
                 <p className="boxed-info"> Shipping - Free</p>
                 <p className="boxed-info"> Total - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>

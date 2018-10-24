@@ -12,8 +12,6 @@ function Confirmation(props) {
             <p>Your order was completed! You will receive an email shortly.  </p>
           </div>
         </div>
-
-
   );
 }
 

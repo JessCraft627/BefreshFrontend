@@ -1,5 +1,3 @@
-
-
 export function fetchProducts() {
   return dispatch => {
     dispatch(fetchProductsBegin())

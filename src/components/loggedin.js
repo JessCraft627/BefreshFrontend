@@ -9,7 +9,6 @@ class LoggedIn extends React.Component {
     open: false,
   }
 
-
   handleOpen = () => {
    this.setState({ open: true, clicked: !this.state.clicked });
  };
@@ -25,7 +24,7 @@ class LoggedIn extends React.Component {
 }
 
   render() {
-
+    console.log(this.props)
     return (
       <div>
         <div className="centered">
@@ -49,15 +48,9 @@ class LoggedIn extends React.Component {
                         this.state.clicked? 'active': 'paused'
                      }  </p>
                    </div>
-         </Modal>  : null
+                 </Modal>  : null
             }
-
-
           </div>
-
-
-
-
 
         <div className= "margin-left">
         <h3 className="order-history-login"> Order History </h3>
@@ -65,14 +58,14 @@ class LoggedIn extends React.Component {
             <thead>
               <tr>
                 <th className="loggedin-info"> Order number:</th>
-                <th className="loggedin-info"> Date:</th>
+                <th className="loggedin-info"> Date Purchased:</th>
                 <th className="loggedin-info"> Total:</th>
               </tr>
            </thead>
             <tbody>
               <tr>
-                <td  className="loggedin-info">{this.props.location.state.user[0].orders[0].id}</td>
-                <td  className="loggedin-info">{this.props.location.state.user[0].orders[0].created_at.slice(0, 10)}</td>
+                <td  className="loggedin-info">1</td>
+                <td  className="loggedin-info">{this.props.location.state.user[0].created_at.slice(0, 10)}</td>
                 <td  className="loggedin-info">${this.props.location.state.user[0].orders[0].total}</td>
               </tr>
             </tbody>

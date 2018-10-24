@@ -1,8 +1,6 @@
 import React from 'react'
 import logo from '../css/assets/whitelogo.png';
 
-
-
 function Footer(props) {
   return (
       <footer className="footer">

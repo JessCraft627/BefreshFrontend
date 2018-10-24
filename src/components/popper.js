@@ -8,12 +8,8 @@ import box from '../css/assets/box.png';
 
 const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null, 'numordered'));
 
-
-
 function RenderPropsPopover(props) {
-
-
-
+  console.log(props.cart)
   return (
     <WithState>
       {({ anchorEl, updateAnchorEl }) => {
@@ -55,7 +51,7 @@ function RenderPropsPopover(props) {
                     className="get-checkout"
                     to={{
                       pathname: "/checkout",
-                      state: { picked: props.picked }
+                      state: { picked: props.picked, cart:props.cart }
                     }}
                     > Next </Link> : null}
 
