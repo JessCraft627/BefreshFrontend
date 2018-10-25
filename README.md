@@ -1,3 +1,17 @@
+
+
+## This project was used in conjunction with this backend ->  https://github.com/Jessicalong627/Befreshbackend
+## A React Native app was also created here -> https://github.com/Jessicalong627/befreshmobile
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
