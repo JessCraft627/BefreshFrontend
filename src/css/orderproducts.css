@@ -9,6 +9,11 @@
   border-color: #eb7171;
 }
 
+.add-to-cart:hover {
+  background-color: #d35252;
+ cursor:pointer;
+}
+
 .smoothie-details {
   padding: 7px;
   font-weight: 100;

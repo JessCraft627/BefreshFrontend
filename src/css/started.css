@@ -30,6 +30,14 @@ h4 {
    display: inline-block;
    margin-right: 30px;
 }
+.weekly-offers {
+   border-radius: 10px;
+   border: solid 4px #272f30;
+   width: 162px;
+   height: 162px;
+   display: inline-block;
+   margin-right: 30px;
+}
 
 .weekly-offer:hover {
   background-color:  #eb7171;
@@ -73,4 +81,5 @@ h4 {
 }
  .view-products:hover {
    background-color: #d35252;
+   cursor: pointer;
  }

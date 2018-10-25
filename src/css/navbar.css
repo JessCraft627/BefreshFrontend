@@ -28,8 +28,9 @@ body {
 
 .login:hover {
   background-color: #eb7171;
-
+  border-radius: 22.5px;
   color: white;
+  cursor: pointer;
   font-weight: 200;
 }
 
@@ -41,14 +42,26 @@ body {
   width: 150px;
   height: 45px;
   font-size: 16px;
-  font-weight: 300;
-  letter-spacing: .8px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.started:hover {
+  border-radius: 22.5px;
+  border: #eb7171;
+  background-color: #eb7171;
+  color:white;
+    cursor: pointer;
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
 }
 
 .browse {
   font-size: 18px;
   font-weight: bold;
+  margin-left: 25px;
   border:none;
     padding: 10px;
   color: #160424;
@@ -56,8 +69,9 @@ body {
 
 .browse:hover {
   background-color: #eb7171;
-
+  border-radius: 22.5px;
   color: white;
+  cursor: pointer;
   font-weight: 200;
 }
 
@@ -82,6 +96,8 @@ body {
     width: 100%;
     margin: 0;
     display: flex;
+    position: fixed;
+    top:0;
     justify-content: space-around;
     align-items: center;
     height: 60px;

@@ -31,7 +31,6 @@ class LoggedIn extends React.Component {
         <NavLink
           className="home-names" to="/"> <img src={logo} className="main-logo  confirm-logo" alt="logo" /> </NavLink>
         </div>
-        <h2 className="your-plan">Your plan</h2>
           <div className="confirmation">
             <h2> {this.props.location.state.user[0].subscription} Weekly</h2>
 

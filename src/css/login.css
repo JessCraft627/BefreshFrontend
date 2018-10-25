@@ -10,7 +10,7 @@
 }
 
 .login-button {
-  padding: 10px 20px;
+  padding: 10px 90px;
   margin: 0 auto;
   width: 330px;
   height: 26px;
@@ -21,6 +21,14 @@
   background-color: #eb7171;
   color:white;
 }
+
+
+.login-button:hover {
+  cursor: pointer;
+    background-color: #d35252;
+    border-color: #d35252;
+}
+
 .login-header {
   font-size: 45px;
   margin-bottom: 15px;

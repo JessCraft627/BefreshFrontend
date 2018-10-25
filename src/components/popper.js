@@ -44,7 +44,7 @@ function RenderPropsPopover(props) {
             >
               <div className="popper-container">
                 <div className="popover-details">
-                    {props.cart.map((name, index) =>  {return <div key={index}>   <span data-id={index} className="the-x animated pulse" onClick={props.handleCountDown}> X </span><span className="popper-item ">{name}</span>
+                    {props.cart.length === 0 ? "Your box is empty. Add products to get started!": null}{props.cart.map((name, index) =>  {return <div key={index}>   <span data-id={index} className="the-x animated pulse" onClick={props.handleCountDown}> X </span><span className="popper-item ">{name}</span>
                      </div>})}
                 </div>
                 { props.ordered === props.picked ?     <Link

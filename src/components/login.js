@@ -58,7 +58,7 @@ componentDidMount = () => {
                   <p className="login-i">Password:</p>
                 <input  name="password" type="password" value={this.state.input} onChange={this.handleInputChange} />
               </label>
-              <p className="login-button">
+              <p >
                 {
                   this.state.email === ''
                   ?
