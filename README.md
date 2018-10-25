@@ -1,7 +1,7 @@
 
 
-## This project was used in conjunction with this backend ->  https://github.com/Jessicalong627/Befreshbackend
-## A React Native app was also created here -> https://github.com/Jessicalong627/befreshmobile
+* This project was used in conjunction with this backend ->  https://github.com/Jessicalong627/Befreshbackend
+* A React Native app was also created here -> https://github.com/Jessicalong627/befreshmobile
 
 
 
