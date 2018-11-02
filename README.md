@@ -1,6 +1,6 @@
 
-## Project title:
-BeFresh
+## Project Title:
+BeFresh.
 
 ## Motivation:
 My motivation behind BeFresh. was to create a weekly subscription service that offers smoothies and harvest bowls just like daily harvest. This is my attempt to mock their amazing website.
