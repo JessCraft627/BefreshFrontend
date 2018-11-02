@@ -118,13 +118,13 @@ class Confirmation extends React.Component {
 }
 
 render () {
-  console.log(this.props)
-  console.log(this.state)
   return (
      <React.Fragment>
         <div className="checkout-page">
           <header className="headers">
+              <a href="/">
               <img src={logo} className="be-fresh-logo" alt="logo" />
+              </a>
           </header>
           <h1 className="checkout-headers"> Checkout </h1>
           { this.state.displayError ? <h3 className="error">All fields must be properly filled out </h3> : null }
@@ -181,7 +181,7 @@ render () {
             <main className="arrival-container">
                 <img src={smoothielogo} className="be-smoothie-logo" alt="logo" />
                 <p className="boxed-info"> Your box will arrive on November 1st</p>
-                <div className="boxed-info"> Box Contents: {this.props.location.state.cart.map((cart, index) => <p>{index + 1}: {cart}</p>)} </div>
+                <div className="boxed-information"> <span>Box Contents:</span> {this.props.location.state.cart.map((cart, index) => <p>{index + 1}: {cart}</p>)} </div>
                 <p className="boxed-info"> {this.props.location.state.picked} cups weekly - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>
                 <p className="boxed-info"> Shipping - Free</p>
                 <p className="boxed-info"> Total - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>

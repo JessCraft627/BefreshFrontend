@@ -43,6 +43,15 @@
     padding-bottom: 15px;
     font-weight: 300;
 }
+.boxed-information {
+    border: 2px solid #99f0e1;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.boxed-information span {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
 
 input[name=payment-info] {
     width: 300px;

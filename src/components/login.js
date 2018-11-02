@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './navbar'
 import { Link } from 'react-router-dom';
+import { Route, Redirect } from 'react-router'
 import raspberryclusters from '../css/assets/raspberryclusters.png';
 
 
@@ -9,7 +10,8 @@ class Login extends React.Component {
   state = {
     email: '',
     password: '',
-    user: []
+    user: [],
+    clicked: false
   }
 
   handleInputChanges = event => {
@@ -31,7 +33,10 @@ dataToDisplay = () => {
 
 
 filterResults = () => {
-  return this.state.user.filter(users => users.email.toLowerCase().includes(this.state.email.toLowerCase()))}
+
+    return this.state.user.filter(users => users.email.toLowerCase().includes(this.state.email.toLowerCase()))
+
+  }
 
 componentDidMount = () => {
   fetch("http://localhost:3000/api/v1/users")
@@ -41,6 +46,9 @@ componentDidMount = () => {
   }))
 }
 
+validateForm() {
+   return this.state.email.length > 3 && this.state.password.length > 3;
+ }
 
 
   render() {
@@ -48,6 +56,7 @@ componentDidMount = () => {
       <div>
         <Navbar />
           <div className="login-div">
+  
             <h1 className="login-header"> Log In </h1>
             <form className="login-form" onSubmit={this.handleSubmit}>
               <label>
@@ -59,24 +68,19 @@ componentDidMount = () => {
                 <input  name="password" type="password" value={this.state.input} onChange={this.handleInputChange} />
               </label>
               <p >
-                {
-                  this.state.email === ''
-                  ?
-                <Link
-                    className="login-button"
-                  to={{
-                    pathname: "/loggedin",
-                    state: { user: this.dataToDisplay() }
-                  }}
-                  onClick={ (e) => e.preventDefault() }
-                > Log In </Link>
-              :     <Link
-                      className="login-button"
-                      to={{
-                      pathname: "/loggedin",
-                      state: { user: this.dataToDisplay() }
-                    }}
-                  > Log In </Link>}
+                {this.validateForm() ?      <Link
+                          className="login-button"
+                          to={{
+                          pathname: "/loggedin",
+                          state: { user: this.dataToDisplay() }
+                        }}
+                      > Log In </Link> :  <Link
+                                className="login-button"
+                                to={{
+                                pathname: "/login"
+                              }}
+                            > Log In </Link>}
+
 
               </p>
             </form>
