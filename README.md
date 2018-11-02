@@ -3,7 +3,7 @@
 BeFresh.
 
 ## Motivation:
-My motivation behind BeFresh. was to create a weekly subscription service that offers smoothies and harvest bowls just like Daily Harvest. This is my attempt to mock their amazing website.
+My motivation behind BeFresh. was to create a weekly subscription service that offers smoothies and harvest bowls. I have been fascinated with this concept every since I heard Daily Harvest. I love healthy living and eating especially when it's delivered to my doorstep. This is my attempt to mock their amazing website.
 
 ## Screenshots:
 <img width="1440" alt="screen shot 2018-10-31 at 11 58 01 am" src="https://user-images.githubusercontent.com/35347408/47801331-5a561a00-dd04-11e8-8b1a-d69b33393362.png">
@@ -24,6 +24,8 @@ React & Ruby on Rails
 Custom
 
 ## Features
+Ability to see all products and click on details to see the products ingredients.
+Top picks section! See the most popular items that are selling.
 A shopping cart "box" that a user has to fill to be able to checkout. 
 
 ##  Installation:
@@ -47,7 +49,7 @@ Before submitting a new issue ensure that one has not already been created by re
 Write detailed information
 Detailed information is very helpful to understand an issue.
 
-# For example:
+### For example:
 
 How to reproduce the issue, step-by-step.
 The expected behavior (or what is wrong).
