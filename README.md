@@ -36,7 +36,28 @@ To get a development server running clone the project, npm i and npm start along
 I used Daily Harvest's product images, taglines & descriptions.
 
 ## Contribute
-If you have ideas/contributions or see a bug that needs fixed please submit a pull request.
+Thanks for your interest in contributing to BeFresh.
+
+The following is a set of guidelines for contributing to the BeFresh. client.
+
+
+Issues
+Before submitting a new issue ensure that one has not already been created by reviewing the open issues. If your bug is unique to the currently open issues, submit a new one here.
+
+Write detailed information
+Detailed information is very helpful to understand an issue.
+
+For example:
+
+How to reproduce the issue, step-by-step.
+The expected behavior (or what is wrong).
+Screenshots displaying the buggy behavior.
+The operating system.
+Pull requests
+Pull Requests are always welcome. Ensure that you've run npm install before creating an issue or submitting a pull request. Ensure the PR description clearly describes the problem and solution. It should include:
+
+The operating system on which you tested.
+The relevant issue number, if applicable.
 
 ## License:
 MIT © JessicaLong
