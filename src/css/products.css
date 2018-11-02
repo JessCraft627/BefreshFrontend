@@ -1,0 +1,82 @@
+.smoothie-box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prepping-juicing-pouring {
+  font-size: 22px;
+  color: #eb7171;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.product-header {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 40px;
+}
+
+.product-images {
+  margin: 24px 15px 20px 15px;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.home-name {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.29;
+}
+
+.home-kind {
+  font-size: 16px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.home-products {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: #eb7171;
+}
+
+.home-products:hover {
+    color: white;
+    background-color: #eb7171;
+    padding: 5px 20px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.home-top-picks {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.home-details {
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 140px;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 100;
+  padding-left: 55px;
+  padding-right: 55px;
+}

@@ -1,0 +1,96 @@
+.add-to-cart {
+  width: 270px;
+  height: 35px;
+  border-radius: 22.5px;
+  background-color: #eb7171;
+  color:white;
+  font-size: 16px;
+  font-weight: 100;
+  border-color: #eb7171;
+}
+
+.add-to-cart:hover {
+  background-color: #d35252;
+ cursor:pointer;
+}
+
+.smoothie-details {
+  padding: 7px;
+  font-weight: 100;
+}
+.smoothie-details:hover {
+  color:black;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.boxes-logo {
+  width: 48px;
+  height: 38px;
+  object-fit: contain;
+  margin-bottom: -10px;
+  padding-left: 10px;
+}
+
+.popper-container {
+  width: 360px;
+  height: 500px;
+  margin: 10px;
+  border: 1px solid #eb7171;
+}
+
+.popover-details {
+  padding: 30px 5px 100px 30px;
+}
+
+.get-checkout {
+  padding: 10px 100px;
+  border-radius: 22.5px;
+  background-color: #eb7171;
+  color:white;
+  margin-left: 55px;
+  width:350px;
+}
+
+.get-checkout:hover {
+  background-color: #d35252;
+}
+
+.modal-container {
+  width: 75%;
+  margin: 0 auto;
+  height:100%;
+  opacity: 1;
+}
+.modal-containers {
+  background-color: white;
+  width: 35%;
+  padding: 40px;
+  color:black;
+  margin: 150px auto;
+  opacity: 1;
+}
+
+.the-x {
+  padding-left:10px;
+  font-size: 20px;
+  color: #eb7171;
+}
+.the-x:hover {
+  color:white;
+  background-color: #eb7171;
+}
+
+.individual-p-infos {
+  border: 2px solid black;
+  padding: 25px;
+}
+
+.popper-item {
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  line-height: 2;
+}

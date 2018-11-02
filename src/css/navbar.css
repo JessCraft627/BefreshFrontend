@@ -1,28 +1,37 @@
-.navbar {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.home-name {
-  flex-basis: 400px;
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px 10px 80px;
+
 }
-.App-logo {
-width: 153px;
-height: 28px;
+
+.main-logo {
+  width: 153px;
+  height: 28px;
+  margin-left: 40px;
 }
+
 .login {
   border:none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #160424;
-  margin-right: 20px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.login:hover {
+  background-color: #eb7171;
+  border-radius: 22.5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 200;
 }
 
 .started {
@@ -30,17 +39,67 @@ height: 28px;
   border: #eb7171;
   background-color: #eb7171;
   color:white;
-  width: 155px;
+  width: 150px;
   height: 45px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.started:hover {
+  border-radius: 22.5px;
+  border: #eb7171;
+  background-color: #eb7171;
+  color:white;
+    cursor: pointer;
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
 }
 
 .browse {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+  margin-left: 25px;
   border:none;
+    padding: 10px;
   color: #160424;
-  flex-basis: 500px;
+}
+
+.browse:hover {
+  background-color: #eb7171;
+  border-radius: 22.5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+
+.back-button {
+  width: 14px;
+ height: 18px;
+}
+
+.white-logo {
+  width: 152px;
+  height: 28px;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.count-boxes {
+  color: white;
+  font-size: 16px;
+}
+.order-navbar {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    top:0;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #eb7171;
 }

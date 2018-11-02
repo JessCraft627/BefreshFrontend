@@ -1,11 +1,21 @@
 import React from 'react'
-import Loginnav from './loginnavbar'
-import { NavLink } from 'react-router-dom';
+import logo from '../css/assets/logo@3x.png';
+import { NavLink, Redirect } from 'react-router-dom';
+import Modal from '@material-ui/core/Modal';
 
 class LoggedIn extends React.Component {
   state = {
-    clicked: true
+    clicked: true,
+    open: false,
   }
+
+  handleOpen = () => {
+   this.setState({ open: true, clicked: !this.state.clicked });
+ };
+
+ handleClose = () => {
+   this.setState({ open: false });
+ };
 
   handleInputChange = event => {
   this.setState({
@@ -13,38 +23,75 @@ class LoggedIn extends React.Component {
   })
 }
 
+
+
   render() {
-    console.log(this.props)
+  console.log(this.props)
     return (
       <div>
-      <Loginnav />
-        <h1>Your plan</h1>
-        <p> {this.props.location.state.user[0].subscription} Weekly </p>
-        <p> Your plan is {
-           this.state.clicked? 'Active' : 'Paused'
-        } </p>
-        <button onClick= {() => this.setState({clicked: !this.state.clicked})}>
-        {
-           this.state.clicked? 'Pause Plan' : 'Activate Plan'
-        }
-        </button>
-
-        <h2> Order History </h2>
-        <p> Order number: {this.props.location.state.user[0].orders[0].id}</p>
-        <p> Date: {this.props.location.state.user[0].orders[0].created_at.slice(0, 10)}</p>
-        <p> Total: ${this.props.location.state.user[0].orders[0].total}</p>
-
-        <h2> Account Info </h2>
-        <p> {this.props.location.state.user[0].name}</p>
-        <p> {this.props.location.state.user[0].email}</p>
-
-
+        <div className="centered">
         <NavLink
-          className="logout-button"
-          to={"/"}
-          exact="true"
-        ><button> Logout </button></NavLink>
+          className="home-names" to="/"> <img src={logo} className="main-logo  confirm-logo" alt="logo" /> </NavLink>
+        </div>
 
+          {this.props.location.state.user.length === 0 ? <Redirect
+                            to={{
+                              pathname: "/login",
+                            }}
+                          />
+               :
+            <React.Fragment>
+              <div className="confirmation">
+                <h2> {this.props.location.state.user[0].subscription} Weekly</h2>
+
+              <button className="pause-plan" onClick={this.handleOpen}>  {  this.state.clicked ?  'Pause your plan' : 'Activate Plan'}   </button>
+                {this.state.open ?
+                     <Modal
+                          className="modal-container-two"
+                          disableAutoFocus={true}
+                         open={this.state.open}
+                         onClose={this.handleClose}
+                       >
+                       <div className="modal-containers">
+                         <p>Your plan is now {
+                            this.state.clicked? 'active': 'paused'
+                         }  </p>
+                       </div>
+                     </Modal>  : null
+                }
+              </div>
+
+            <div className= "margin-left">
+            <h3 className="order-history-login"> Order History </h3>
+              <table id="customer-orders">
+                <thead>
+                  <tr>
+                    <th className="loggedin-info"> Order number:</th>
+                    <th className="loggedin-info"> Date Purchased:</th>
+                    <th className="loggedin-info"> Total:</th>
+                  </tr>
+               </thead>
+                <tbody>
+                  <tr>
+                    <td  className="loggedin-info">1</td>
+                    <td  className="loggedin-info">{this.props.location.state.user[0].created_at.slice(0, 10)}</td>
+                    <td  className="loggedin-info">${this.props.location.state.user[0].orders[0].total}</td>
+                  </tr>
+                </tbody>
+              </table>
+            <h3> Account Info </h3>
+            <p className="loggedin-info"> {this.props.location.state.user[0].name}</p>
+            <p className="loggedin-info"> {this.props.location.state.user[0].email}</p>
+
+
+            <NavLink
+              className="logout-button"
+              to={"/"}
+            ><button className="pause-plan"> Logout </button></NavLink>
+            </div>
+
+         </React.Fragment>
+         }
       </div>
     )
   }

@@ -6,14 +6,20 @@ import rice from '../css/assets/cauliflowerRice.jpeg'
 
 function TopPicks(props) {
   return (
-    <div className="home-top-picks"><p>Top Picks</p>
-      <div className="home-top-pick"><img src={banana} className="App-logo" alt="logo" /><p>Banana + Greens</p><p>Smoothie</p><NavLink
-      to="/products"> See all products </NavLink></div>
-    <div className="home-top-pick"><img src={rice} className="App-logo" alt="logo" /><p>Cauliflower Rice + Pesto</p><p>Harvest Bowl</p><NavLink
-      to="/products"> See all products </NavLink></div>
-    <div className="home-top-pick"><img src={cherry} className="App-logo" alt="logo" /><p>Acai + Cherry</p><p>Smoothie</p><NavLink
-      to="/products"> See all products </NavLink></div>
-   </div>
+     <React.Fragment>
+        <h1 className="top-picks">Top Picks</h1>
+        <div className="home-top-picks">
+          <div className="home-top-pick"><img src={banana} className="App-logo" alt="logo" /><p className="home-name">Banana + Greens</p><p className="home-kind">Smoothie</p><NavLink
+          className="home-products"
+          to="/products"> See all products </NavLink></div>
+        <div className="home-top-pick"><img src={rice} className="App-logo" alt="logo" /><p className="home-name">Cauliflower Rice + Pesto</p><p className="home-kind">Harvest Bowl</p><NavLink
+          className="home-products"
+          to="/products"> See all products </NavLink></div>
+        <div className="home-top-pick"><img src={cherry} className="App-logo" alt="logo" /><p className="home-name">Acai + Cherry</p><p className="home-kind">Smoothie</p><NavLink
+          className="home-products"
+          to="/products"> See all products </NavLink></div>
+       </div>
+    </React.Fragment>
   );
 }
 

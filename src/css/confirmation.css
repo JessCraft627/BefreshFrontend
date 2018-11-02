@@ -1,0 +1,28 @@
+
+.confirmation {
+  margin: 0 auto;
+  width: 871px;
+  height: 400px;
+  background: url('plan-bg@3x.jpg');
+  background-size: contain;
+  text-align: center;
+}
+
+.confirmation h2 {
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 120px;
+}
+
+.confirmation p {
+ font-size: 16px;
+ line-height: 1.5;
+}
+.confirmation-page {
+  text-align: center;
+}
+
+.confirm-logo{
+  margin: 15px;
+  padding: 5px 0px 30px;
+}

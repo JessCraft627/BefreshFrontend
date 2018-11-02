@@ -1,40 +1,44 @@
 import React from 'react'
 import Navbar from './navbar'
-import Footer from './footer'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { fetchProducts } from "../actions/index";
 
-
-
 class ProductContainer extends React.Component {
 
   componentDidMount() {
-    this.props.dispatch(fetchProducts());
+    this.props.dispatch(fetchProducts())
+  }
+
+  state = {
+    selectedProduct: []
   }
 
   render () {
-    console.log(this.props.products)
-
       if (this.props.loading) {
-        return <h1>Loading...</h1>;
+        return <div className="prepping-juicing-pouring"> Prepping... Juicing... Pouring...</div>;
       }
 
     return (
       <div>
         <Navbar />
-        <ul>
+        <h1 className="product-header"> All Products</h1>
+        <ul className="product-container">
         {this.props.products.map(product =>
-          <div key={product.id}>
-           <img src={product.image_url} className="App-logo" alt="logo" />
-           <p>{product.name}</p>
-            <p> {product.kind}</p>
+          <div className="product-div" key={product.id}>
+           <img src={product.image_url} className="product-images" alt="logo" />
+           <p className="home-name">{product.name}</p>
+            <p className="home-kind"> {product.kind}</p>
             <Link
+              data-user={product.id}
+              className="home-products"
               to={{
                 pathname: "/product",
+                state: { selectedProduct: product.id }
               }}
+
             > Details </Link>
-           </div>
+          </div>
 
        )}
      </ul>
