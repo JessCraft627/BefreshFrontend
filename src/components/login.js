@@ -39,7 +39,7 @@ filterResults = () => {
   }
 
 componentDidMount = () => {
-  fetch("http://localhost:3000/api/v1/users")
+  fetch("https://befresh-api.herokuapp.com/api/v1/users")
   .then(r=>r.json())
   .then(json => this.setState({
     user: json
@@ -56,7 +56,7 @@ validateForm() {
       <div>
         <Navbar />
           <div className="login-div">
-  
+
             <h1 className="login-header"> Log In </h1>
             <form className="login-form" onSubmit={this.handleSubmit}>
               <label>
