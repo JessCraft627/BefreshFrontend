@@ -1,21 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import cherry from '../css/assets/acaiCherry.jpeg'
-import banana from '../css/assets/bananaGreens.jpeg'
-import rice from '../css/assets/cauliflowerRice.jpeg'
+import cherry from '../css/assets/Befresh_Smoothie_8.gif'
+import acai from '../css/assets/Befresh_Smoothie_6.jpg'
+import chocolate from '../css/assets/Befresh_bowl_6.jpg'
 
 function TopPicks(props) {
   return (
      <React.Fragment>
         <h1 className="top-picks">Top Picks</h1>
         <div className="home-top-picks">
-          <div className="home-top-pick"><img src={banana} className="App-logo" alt="logo" /><p className="home-name">Banana + Greens</p><p className="home-kind">Smoothie</p><NavLink
+          <div className="home-top-pick"><img src={cherry} className="App-logo" alt="logo" /><p className="home-name">Strawberry & Peach</p><p className="home-kind">Smoothie</p><NavLink
           className="home-products"
           to="/products"> See all products </NavLink></div>
-        <div className="home-top-pick"><img src={rice} className="App-logo" alt="logo" /><p className="home-name">Cauliflower Rice + Pesto</p><p className="home-kind">Harvest Bowl</p><NavLink
+        <div className="home-top-pick"><img src={chocolate} className="App-logo" alt="logo" /><p className="home-name">Chocolate</p><p className="home-kind">Harvest Bowl</p><NavLink
           className="home-products"
           to="/products"> See all products </NavLink></div>
-        <div className="home-top-pick"><img src={cherry} className="App-logo" alt="logo" /><p className="home-name">Acai + Cherry</p><p className="home-kind">Smoothie</p><NavLink
+        <div className="home-top-pick"><img src={acai} className="App-logo" alt="logo" /><p className="home-name">Acai & Raspberry</p><p className="home-kind">Smoothie</p><NavLink
           className="home-products"
           to="/products"> See all products </NavLink></div>
        </div>

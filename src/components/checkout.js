@@ -101,7 +101,7 @@ class Confirmation extends React.Component {
           user_id: res.id,
           total: 34
         })
-      })).then( res => res.json()).then( res => fetch(`http://localhost:3000/api/v1/orders/${res.id}`, {
+      })).then( res => res.json()).then( res => fetch(`https://befresh-api.herokuapp.com/api/v1/orders/${res.id}`, {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
