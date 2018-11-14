@@ -5,6 +5,9 @@ BeFresh.
 ## Motivation:
 My motivation behind BeFresh. was to create a weekly subscription service that offers smoothies and harvest bowls. I have been fascinated with this concept every since I heard Daily Harvest. I love healthy living and eating especially when it's delivered to my doorstep. This is my attempt to mock their amazing website.
 
+## Demo:
+[Video Demo](https://www.dropbox.com/s/xwuarf5lu1sdw3i/bf1.mov?dl=0)
+
 ## Screenshots:
 <img width="1440" alt="screen shot 2018-10-31 at 11 58 01 am" src="https://user-images.githubusercontent.com/35347408/47801331-5a561a00-dd04-11e8-8b1a-d69b33393362.png">
 
