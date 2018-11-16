@@ -3,6 +3,8 @@ import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+//CSS Files
 import './css/app.css';
 import './css/products.css';
 import './css/iproduct.css';
@@ -11,12 +13,15 @@ import './css/login.css';
 import './css/loggedhome.css';
 import './css/checkout.css';
 import './css/orderproducts.css';
+import './css/mobile.css';
+import './css/tablet.css';
 import './css/footer.css';
 import './css/started.css';
 import './css/confirmation.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+//Components
 import Login from './components/login'
 import Loggedin from './components/loggedin'
 import ProductContainer from './components/productcontainer'
@@ -29,9 +34,8 @@ import App from './App';
 import reducer from './reducers/name.js'
 import thunk from 'redux-thunk';
 
-
+//Redux Store
 const store = createStore(reducer, applyMiddleware(thunk))
-
 
 ReactDOM.render((
   <Provider store={store}>

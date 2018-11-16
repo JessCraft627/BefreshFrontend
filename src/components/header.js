@@ -5,7 +5,6 @@ import watermelon from '../css/assets/watermelon.jpg';
 import raspberry from '../css/assets/raspberry.jpg';
 import pineapple from '../css/assets/pineapple.jpg';
 
-
 export default class AutoPlay extends Component {
   render() {
     const settings = {

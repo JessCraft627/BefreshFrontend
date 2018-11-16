@@ -9,11 +9,9 @@ const initialState = {
   error: null
 };
 
-
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case FETCH_PRODUCTS_BEGIN:
-
       return {
         ...state,
         loading: true,
@@ -21,7 +19,6 @@ export default function reducer(state = initialState, action) {
       };
 
     case FETCH_PRODUCTS_SUCCESS:
-
       return {
         ...state,
         loading: false,

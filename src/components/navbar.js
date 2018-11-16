@@ -4,19 +4,22 @@ import logo from '../css/assets/logo@3x.png';
 
 function Navbar(props) {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <NavLink
         className="nav-button"
-        to="/products"> <button className="nav-button browse"> Products </button></NavLink>
+        to="/products"> <button className="nav-button p-browse"> Products </button></NavLink>
       <NavLink
           className="home-name" to="/"> <img src={logo} className="main-logo" alt="logo" /> </NavLink>
       <div>
+        <NavLink
+      
+          to="/products"> <button id="m-browse" > Products </button></NavLink>
         <NavLink
         to="/login"> <button className="nav-button login"> Log In  </button></NavLink>
         <NavLink
         to="/started">  <button className="nav-button started"> Get started  </button></NavLink>
       </div>
-    </div>
+    </nav>
   );
 }
 

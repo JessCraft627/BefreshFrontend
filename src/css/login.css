@@ -22,9 +22,8 @@
   color:white;
 }
 
-
 .login-button:hover {
-  cursor: pointer;
+    cursor: pointer;
     background-color: #d35252;
     border-color: #d35252;
 }

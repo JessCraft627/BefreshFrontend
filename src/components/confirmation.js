@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 function Confirmation(props) {
   return (
-        <div className="confirmation-page">
+        <header className="confirmation-page">
           <NavLink
             className="home-names" to="/"> <img src={logo} className="main-logo confirm-logo" alt="logo" /> </NavLink>
-          <div className="confirmation">
+          <main className="confirmation">
             <h2> Order Confirmed</h2>
             <p>Your order was completed! You will receive an email shortly.  </p>
-          </div>
-        </div>
+          </main>
+        </header>
   );
 }
 

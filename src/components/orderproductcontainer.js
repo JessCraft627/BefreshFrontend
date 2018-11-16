@@ -20,7 +20,6 @@ class ProductContainer extends React.Component {
         let products = e.target.dataset.user
         let product = parseInt(products)
         this.setState({ open: true, selectedProducts: product });
-
     };
 
     handleOrderChanges = event => {
@@ -45,20 +44,17 @@ class ProductContainer extends React.Component {
       this.setState({ open: false, selectedProducts: [] });
     };
 
-
     componentDidMount() {
       this.props.dispatch(fetchProducts())
     }
 
-
   render () {
       if (this.props.loading) {
-        return <div className="prepping-juicing-pouring"> Prepping... Juicing... Pouring...</div>;
+        return <div className="prepping-juicing-pouring"> Prepping... Juicing... Pouring...</div>
       }
-
     return (
-      <div>
-        <div className="order-navbar">
+      <React.Fragment>
+        <nav className="order-navbar">
           <NavLink
             className="nav-button browse"
             to="/started">  <img src={back} className="back-button" alt="logo" /></NavLink>
@@ -66,10 +62,12 @@ class ProductContainer extends React.Component {
               className="home-name" to="/"> <img src={logo} className="white-logo" alt="logo" /> </NavLink>
             <p className="count-boxes"> {this.state.numordered} / {this.props.location.state.numpicked}
                <Popper ordered={this.state.numordered} picked={this.props.location.state.numpicked } cart={this.state.cart} handleCountDown={this.handleCountDown} handleUpdate={this.handleOrderChanges}/></p>
+        </nav>
 
-      </div>
         <h1 className="product-header"> All Products</h1>
-        <ul className="product-container">
+
+        <main className="product-container">
+
         {this.props.products.map(product =>
           <div className="product-div" key={product.id}>
            <img src={product.image_url} className="product-images" alt="logo" />
@@ -80,7 +78,8 @@ class ProductContainer extends React.Component {
            <button className="add-to-cart" data-image={product.image_url} data-id={product.id} data-product={product.name} onClick={this.handleOrderChanges}> Add to cart </button>
           </div>
        )}
-       {this.state.open ?         <Modal
+
+       {this.state.open ? <Modal
                className="modal-container"
                open={this.state.open}
                onClose={this.handleClose}
@@ -102,9 +101,8 @@ class ProductContainer extends React.Component {
                  }
                </div>
              </Modal>  : null }
-
-           </ul>
-      </div>
+           </main>
+      </React.Fragment>
     )
   }
 }
