@@ -55,7 +55,7 @@ h4 {
 }
 
 .numbered-week {
-  height: 19px;
+   height: 19px;
    font-size: 16px;
    font-weight: 500;
    padding-top: 5px;
@@ -70,6 +70,8 @@ h4 {
 .view-products {
   width: 289px;
   height: 65px;
+  border-bottom: 0;
+  border-right: 0;
   border-radius: 32.5px;
   background-color: #eb7171;
   color:white;

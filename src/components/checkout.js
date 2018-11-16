@@ -1,14 +1,13 @@
 import React from 'react'
-import logo from '../css/assets/whitelogo.png';
 import { NavLink } from 'react-router-dom';
 import smoothielogo from '../css/assets/image-order.jpg';
+import CheckoutHeader from './checkoutheader.js'
 
 class Confirmation extends React.Component {
-
   state = {
     name: " ",
-    email: " ",
-    password: " ",
+    mail: " ",
+    pass: " ",
     subscription: this.props.location.state.picked,
     address: " ",
     city: " ",
@@ -19,47 +18,12 @@ class Confirmation extends React.Component {
     displayError: false
   };
 
-  handleInputChange = event => {
+  handleInputChange = evt => {
   this.setState({
-    name: event.target.value
-  })
-}
-  handleInputChangeTwo = event => {
-  this.setState({
-    email: event.target.value
-  })
-}
-  handleInputChangeThree = event => {
-  this.setState({
-    password: event.target.value
+    [evt.target.name]: evt.target.value
   })
 }
 
-  handleInputChangeFive = event => {
-  this.setState({
-    address: event.target.value
-  })
-}
-  handleInputChangeSix = event => {
-  this.setState({
-    city: event.target.value
-  })
-}
-  handleInputChangeSeven = event => {
-  this.setState({
-    state: event.target.value
-  })
-}
-  handleInputChangeEight = event => {
-  this.setState({
-    zip: parseInt(event.target.value)
-  })
-}
-  handleInputChangeNine = event => {
-  this.setState({
-    card_number: parseInt(event.target.value)
-  })
-}
   handleInputChangeTen = event => {
   this.setState({
     subscription: this.props.location.state.picked
@@ -68,9 +32,8 @@ class Confirmation extends React.Component {
   handleInputChangeEleven = event => {
   this.setState({
     orders: this.props.location.state.cart
-  }, () => console.log(this.state))
+  })
 }
-
 
   handleProfileCreation = event => {
   if (this.state.name !== " " &&  this.state.city !== " " && this.state.email !== " " && this.state.zip !== " ") {
@@ -82,8 +45,8 @@ class Confirmation extends React.Component {
       method: 'POST',
       body: JSON.stringify({
         name: this.state.name,
-        email: this.state.email,
-        password: this.state.password,
+        email: this.state.mail,
+        password: this.state.pass,
         subscription: this.state.subscription,
         address: this.state.address,
         city: this.state.city,
@@ -118,15 +81,12 @@ class Confirmation extends React.Component {
 }
 
 render () {
+  console.log(this.state.pass)
   return (
      <React.Fragment>
         <div className="checkout-page">
-          <header className="headers">
-              <a href="/">
-              <img src={logo} className="be-fresh-logo" alt="logo" />
-              </a>
-          </header>
-          <h1 className="checkout-headers"> Checkout </h1>
+          <CheckoutHeader />
+
           { this.state.displayError ? <h3 className="error">All fields must be properly filled out </h3> : null }
           <div className="card-container">
             <main className="card-info">
@@ -135,52 +95,52 @@ render () {
                   <label className="checkout-header">
                     Name on card:
                     <input onChange={this.handleInputChange}
-                      value={this.state.name} name="payment-info" type="text" />
+                      value={this.state.name} name="name" payment-info="_blank" type="text" />
                   </label>
                   <label className="checkout-header">
                     Card Number:
-                    <input onChange={this.handleInputChangeNine} name="payment-info" type="text" placeholder="0000-1111-2222-3333" value={this.state.card_number}  />
+                    <input onChange={this.handleInputChange} name="card_number" payment-info="_blank" type="text" placeholder="0000-1111-2222-3333" value={this.state.card_number}  />
                   </label>
                   <label className="checkout-header">
                     CVV:
-                    <input name="payment-info" type="text" placeholder="000" value={null}  />
+                    <input name="payment-info" type="text" payment-info="_blank" placeholder="000" value={null}  />
                   </label>
                   <label className="checkout-header">
                     Expiration:
-                    <input name="payment-info" type="text" placeholder="10/19" value={null}  />
+                    <input name="payment-info" type="text" payment-info="_blank" placeholder="10/19" value={null}  />
                   </label>
                   <p className="checkout-names">Shipping Address</p>
                     <label className="checkout-header">
                       Address:
-                      <input  onChange={this.handleInputChangeFive} name="payment-info" type="text" value={this.state.address}  />
+                      <input  onChange={this.handleInputChange} name="address" payment-info="_blank" type="text" value={this.state.address}  />
                     </label>
                     <label className="checkout-header">
                       City:
-                      <input onChange={this.handleInputChangeSix} name="payment-info" type="text" value={this.state.city}  />
+                      <input onChange={this.handleInputChange} name="city" payment-info="_blank" type="text" value={this.state.city}  />
                     </label>
                     <label className="checkout-header">
                       State:
-                      <input onChange={this.handleInputChangeSeven} name="payment-info" type="text" value={this.state.state}  />
+                      <input onChange={this.handleInputChange} name="state" payment-info="_blank" type="text" value={this.state.state}  />
                     </label>
                     <label className="checkout-header">
                       Zip:
-                      <input  onChange={this.handleInputChangeEight} name="payment-info" type="text" value={this.state.zip}  />
+                      <input  onChange={this.handleInputChange} name="zip" payment-info="_blank" type="text" value={this.state.zip}  />
                     </label>
                     <p className="checkout-names">Account</p>
                       <label className="checkout-header">
                         Email:
-                        <input onChange={this.handleInputChangeTwo} name="payment-info" type="text" value={this.state.email}  />
+                        <input onChange={this.handleInputChange} name="mail" payment-info="_blank" type="text" value={this.state.mail}  />
                       </label>
                       <label className="checkout-header">
                         Password:
-                        <input onChange={this.handleInputChangeThree} name="payment-info" type="text" value={this.state.password}  />
+                        <input onChange={this.handleInputChange} name="pass" payment-info="_blank" type="text" value={this.state.pass}  />
                       </label>
-
                 </form>
             </main>
+
             <main className="arrival-container">
                 <img src={smoothielogo} className="be-smoothie-logo" alt="logo" />
-                <p className="boxed-info"> Your box will arrive on November 1st</p>
+                <p className="boxed-info"> Your box will arrive on December 9th</p>
                 <div className="boxed-information"> <span>Box Contents:</span> {this.props.location.state.cart.map((cart, index) => <p>{index + 1}: {cart}</p>)} </div>
                 <p className="boxed-info"> {this.props.location.state.picked} cups weekly - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>
                 <p className="boxed-info"> Shipping - Free</p>
@@ -189,6 +149,7 @@ render () {
                     onClick={this.handleProfileCreation}
                     to={this.state.name !== " " ? "/confirm" : "/checkout"}> <button className="complete-order"> Complete Order </button> </NavLink>
             </main>
+
           </div>
         </div>
      </React.Fragment>

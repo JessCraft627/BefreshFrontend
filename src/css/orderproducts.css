@@ -1,17 +1,32 @@
 .add-to-cart {
   width: 270px;
   height: 35px;
+  border:0;
   border-radius: 22.5px;
   background-color: #eb7171;
+  border-color: #eb7171;
+  background: #eb7171;
   color:white;
   font-size: 16px;
   font-weight: 100;
-  border-color: #eb7171;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .add-to-cart:hover {
   background-color: #d35252;
- cursor:pointer;
+  border-color: #eb7171;
+  cursor:pointer;
+}
+
+.add-to-cart:focus {
+  background-color: #d35252;
+  cursor:pointer;
+}
+
+.add-to-cart:active{
+   transform: translateY(5px);
 }
 
 .smoothie-details {
@@ -22,7 +37,6 @@
   color:black;
   font-weight: 600;
   cursor: pointer;
-  font-size: 18px;
 }
 
 .boxes-logo {
@@ -72,11 +86,16 @@
   opacity: 1;
 }
 
+.modal-containers:focus {
+  outline: none;
+}
+
 .the-x {
   padding-left:10px;
   font-size: 20px;
   color: #eb7171;
 }
+
 .the-x:hover {
   color:white;
   background-color: #eb7171;

@@ -1,0 +1,71 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  * {
+      overflow-x: hidden;
+  }
+  .smoothie-logo {
+  width: 350px;
+  height: 600px;
+  object-fit: contain;
+}
+.home-details{
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.home-plan {
+  width:100%;
+  height: 100%;
+  }
+  #weekly-offers {
+    margin-right: 10px;
+    width: 140px;
+    margin-bottom: 10px;
+  }
+  #weekly-offer {
+    margin-right: 10px;
+    width: 140px;
+    margin-bottom: 10px;
+  }
+  #m-browse{
+      visibility: hidden;
+    }
+  .top-picks{
+    padding: 15px;
+  }
+  .home-top-picks {
+    flex-direction: column;
+  }
+  .individual-container {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .ind-product-img {
+    margin-bottom: 20px;
+    margin-top:20px;
+  }
+  .individual-p-info {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .modal-container {
+    width:75%;
+  }
+  .be-smoothie-logo {
+    width: 325px;
+    object-fit: cover;
+  }
+  .arrival-container {
+    text-align: center;
+    width: 40%;
+}
+.complete-order {
+  width:75%;
+}
+#confirmation {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  border-radius: 10px;
+ }
+}

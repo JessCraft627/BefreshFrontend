@@ -16,33 +16,29 @@ class ProductContainer extends React.Component {
 
   render () {
       if (this.props.loading) {
-        return <div className="prepping-juicing-pouring"> Prepping... Juicing... Pouring...</div>;
+        return <div className="prepping-juicing-pouring"> Prepping... Juicing... Pouring...</div>
       }
-
     return (
-      <div>
+      <React.Fragment>
         <Navbar />
         <h1 className="product-header"> All Products</h1>
-        <ul className="product-container">
-        {this.props.products.map(product =>
-          <div className="product-div" key={product.id}>
-           <img src={product.image_url} className="product-images" alt="logo" />
-           <p className="home-name">{product.name}</p>
-            <p className="home-kind"> {product.kind}</p>
-            <Link
-              data-user={product.id}
-              className="home-products"
-              to={{
-                pathname: "/product",
-                state: { selectedProduct: product.id }
-              }}
-
-            > Details </Link>
-          </div>
-
-       )}
-     </ul>
-      </div>
+        <main className="product-container">
+          {this.props.products.map(product =>
+            <div className="product-div" key={product.id}>
+             <img src={product.image_url} className="product-images" alt="logo" />
+              <p className="home-name">{product.name}</p>
+              <p className="home-kind"> {product.kind}</p>
+              <Link
+                data-user={product.id}
+                className="home-products"
+                to={{
+                  pathname: "/product",
+                  state: { selectedProduct: product.id }
+                }}> Details </Link>
+            </div>
+           )}
+       </main>
+     </React.Fragment>
     )
   }
 }

@@ -8,17 +8,17 @@ function TopPicks(props) {
   return (
      <React.Fragment>
         <h1 className="top-picks">Top Picks</h1>
-        <div className="home-top-picks">
-          <div className="home-top-pick"><img src={cherry} className="App-logo" alt="logo" /><p className="home-name">Strawberry & Peach</p><p className="home-kind">Smoothie</p><NavLink
+        <main className="home-top-picks">
+          <section className="home-top-pick"><img src={cherry} className="App-logo" alt="logo" /><p className="home-name">Strawberry & Peach</p><p className="home-kind">Smoothie</p><NavLink
           className="home-products"
-          to="/products"> See all products </NavLink></div>
-        <div className="home-top-pick"><img src={chocolate} className="App-logo" alt="logo" /><p className="home-name">Chocolate</p><p className="home-kind">Harvest Bowl</p><NavLink
+          to="/products"> See all products </NavLink></section>
+        <section className="home-top-pick"><img src={chocolate} className="App-logo" alt="logo" /><p className="home-name">Chocolate</p><p className="home-kind">Harvest Bowl</p><NavLink
           className="home-products"
-          to="/products"> See all products </NavLink></div>
-        <div className="home-top-pick"><img src={acai} className="App-logo" alt="logo" /><p className="home-name">Acai & Raspberry</p><p className="home-kind">Smoothie</p><NavLink
+          to="/products"> See all products </NavLink></section>
+        <section className="home-top-pick"><img src={acai} className="App-logo" alt="logo" /><p className="home-name">Acai & Raspberry</p><p className="home-kind">Smoothie</p><NavLink
           className="home-products"
-          to="/products"> See all products </NavLink></div>
-       </div>
+          to="/products"> See all products </NavLink></section>
+      </main>
     </React.Fragment>
   );
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './navbar'
 import { Link } from 'react-router-dom';
-import { Route, Redirect } from 'react-router'
 import raspberryclusters from '../css/assets/raspberryclusters.png';
 
 

@@ -56,11 +56,11 @@
 }
 
 .home-products:hover {
-    color: white;
-    background-color: #eb7171;
-    padding: 5px 20px;
-    font-weight: 400;
-    border-radius: 10px;
+  color: white;
+  background-color: #eb7171;
+  padding: 5px 20px;
+  font-weight: 400;
+  border-radius: 10px;
 }
 
 .home-top-picks {
