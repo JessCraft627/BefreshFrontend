@@ -10,7 +10,7 @@ class Iproduct extends React.Component {
         {this.props.products.filter(product => {
           return product.id === this.props.location.state.selectedProduct}).map((product) => {
           return <main className="individual-container" key={product.id}>
-                    <img src={product.image_url} className="ind-product-img" alt="logo" />
+                    <img src={product.image_url} className="ind-product-img" alt="picture of smoothie" />
                     <div  className="individual-p-info">
                       <p className="individual-p-name">{product.name}</p>
                       <p className="individual-p-kind">{product.kind}</p>
