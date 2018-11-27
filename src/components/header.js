@@ -23,16 +23,16 @@ export default class AutoPlay extends Component {
       <div>
         <Slider {...settings}>
           <div>
-            <img src={orange} className="fruit" alt="logo" />
+            <img src={orange} className="fruit" alt="picture of an orange" />
           </div>
           <div>
-              <img src={pineapple} className="fruit" alt="logo" />
+              <img src={pineapple} className="fruit" alt="picture of an pineapple" />
           </div>
           <div>
-              <img src={raspberry} className="fruit" alt="logo" />
+              <img src={raspberry} className="fruit" alt="picture of a raspberry" />
           </div>
           <div>
-              <img src={watermelon} className="fruit" alt="logo" />
+              <img src={watermelon} className="fruit" alt="picture of a watermelon" />
           </div>
         </Slider>
       </div>
