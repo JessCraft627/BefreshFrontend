@@ -28,7 +28,7 @@ class LoggedIn extends React.Component {
       <React.Fragment>
         <section className="centered">
          <NavLink
-          className="home-names" to="/"> <img src={logo} className="main-logo  confirm-logo" alt="logo" /> </NavLink>
+          className="home-names" to="/"> <img src={logo} className="main-logo  confirm-logo" alt="smoothie-logo" /> </NavLink>
         </section>
 
           {this.props.location.state.user.length === 0 ? <Redirect
