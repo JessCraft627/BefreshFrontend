@@ -6,7 +6,7 @@ function CheckoutHeader(props) {
     <React.Fragment>
           <header className="headers">
               <a href="/">
-              <img src={logo} className="be-fresh-logo" alt="logo" />
+              <img src={logo} className="be-fresh-logo" alt="be-fresh-logo" />
               </a>
           </header>
           <h1 className="checkout-headers"> Checkout </h1>
