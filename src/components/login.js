@@ -89,7 +89,7 @@ validateForm() {
               pathname: "/started"
             }}
             > Get Started </Link></p>
-          <img src={raspberryclusters} className="login-logo" alt="logo" />
+          <img src={raspberryclusters} className="login-logo" alt="photo of raspberry" />
           </div>
       </div>
     );
