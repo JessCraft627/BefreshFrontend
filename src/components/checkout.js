@@ -139,7 +139,7 @@ render () {
             </main>
 
             <main className="arrival-container">
-                <img src={smoothielogo} className="be-smoothie-logo" alt="logo" />
+                <img src={smoothielogo} className="be-smoothie-logo" alt="picture of smoothie" />
                 <p className="boxed-info"> Your box will arrive on December 9th</p>
                 <div className="boxed-information"> <span>Box Contents:</span> {this.props.location.state.cart.map((cart, index) => <p>{index + 1}: {cart}</p>)} </div>
                 <p className="boxed-info"> {this.props.location.state.picked} cups weekly - {this.props.location.state.picked === 6 ? "$69" : "$79"}</p>
