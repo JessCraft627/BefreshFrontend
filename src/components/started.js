@@ -26,7 +26,7 @@ class Started extends Component {
        <React.Fragment>
         <Navbar />
           <main className="home-plan">
-            <img src={smoothie} className="smoothie-logo" alt="logo" />
+            <img src={smoothie} className="smoothie-logo" alt="strawberry smoothie" />
             <section>
               <p id="the-plans" className="the-plans">Choose a Plan</p>
               <p className="no-commit">Healthy just got easy! No commitment. </p>
